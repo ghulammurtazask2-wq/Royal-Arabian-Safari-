@@ -5,7 +5,7 @@
   "total_wp_published": 244,
   "total_in_sitemap": 206,
   "total_orphaned_from_sitemap": 38,
-  "sampled_count": 201,
+  "sampled_count": 205,
   "pages": [
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-dubai/",
@@ -3600,12 +3600,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-22T20:38:52",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r21",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Blog post, distinct wildlife/conservation angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/best-photography-spots-abu-dhabi-desert-safari/",
@@ -3615,12 +3615,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-24T09:36:22",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r21",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Blog post, distinct photography-tips angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/arabian-cultural-etiquette-guide-for-desert-safari-visitors-abu-dhabi/",
@@ -3630,12 +3630,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-22T20:38:55",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r21",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Blog post, distinct etiquette guide. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-packing-list/",
@@ -3645,12 +3645,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-22T13:14:21",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r21",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Blog post, distinct packing-list angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/evening-desert-safari-abu-dhabi/",
