@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-09-28",
+  "note": "Seed keyword-ownership map built from site structure + on-page sampling only. No GSC/GA4 access was available in this session, so 'preferred URL' assignments below are STRUCTURAL HYPOTHESES, not confirmed by query/ranking data. Verify against Search Console query-to-page data before treating any assignment as final, per the no-invented-URL / no-guaranteed-ranking rules this system operates under.",
+  "primary_topic": "Abu Dhabi Desert Safari",
+  "entries": [
+    {
+      "keyword": "abu dhabi desert safari",
+      "search_intent": "commercial / head term",
+      "hypothesized_primary_url": "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-tours/",
+      "status": "NO EXACT-MATCH URL EXISTS",
+      "finding": "There is no bare /abu-dhabi-desert-safari/ page. The closest functional pillar is /abu-dhabi-desert-safari-tours/, which is by far the longest and most comprehensive page on the site (packages, pricing calculator, group bookings, full-day itineraries, FAQs). The homepage also targets this phrase directly in its H1 ('Abu Dhabi Desert Safari from AED 35').",
+      "competing_urls": [
+        "https://www.arabiansafariroyal.com/",
+        "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-tours/",
+        "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-prices/",
+        "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-tickets/",
+        "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-what-to-expect/",
+        "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-reviews/"
+      ],
+      "required_action": "Pull GSC query='abu dhabi desert safari' (and close variants) page-level performance for the 6 URLs above. Confirm which URL Google is actually choosing to rank, then formally assign it as the owner. Do not create a new page for this keyword until that check is done, per the New Page Creation Rule.",
+      "priority": "P1"
+    },
+    {
+      "keyword": "abu dhabi desert safari price / prices",
+      "search_intent": "commercial / transactional",
+      "hypothesized_primary_url": "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-prices/",
+      "supporting_urls": [
+        "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-tours/ (also has full pricing content)",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-50-aed/"
+      ],
+      "required_action": "Confirm via GSC that /abu-dhabi-desert-safari-prices/ outranks the pricing sections embedded in /abu-dhabi-desert-safari-tours/ for price-intent queries; if the tours page is winning instead, consider trimming duplicate pricing content from one of the two rather than keeping both fully built out.",
+      "priority": "P1"
+    },
+    {
+      "keyword": "abu dhabi desert safari booking / how to book",
+      "search_intent": "commercial / transactional",
+      "hypothesized_primary_url": "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-tours/",
+      "finding": "Booking-process content (WhatsApp booking flow, 4-step booking, availability calendar) lives inside /abu-dhabi-desert-safari-tours/ rather than a dedicated booking page. No separate 'desert safari abu dhabi booking' URL exists.",
+      "priority": "P3"
+    },
+    {
+      "keyword": "abu dhabi desert safari pickup",
+      "search_intent": "informational / logistics",
+      "hypothesized_primary_url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-airport-pickup/",
+      "supporting_urls": ["https://www.arabiansafariroyal.com/home-pickup-desert-safari-abu-dhabi/"],
+      "finding": "Two distinct pickup-intent pages exist (airport vs home) — this looks like legitimate intent differentiation, not duplication, but should be confirmed once query data is available.",
+      "priority": "P3"
+    },
+    {
+      "keyword": "abu dhabi dune bashing",
+      "search_intent": "commercial / activity",
+      "hypothesized_primary_url": "https://www.arabiansafariroyal.com/dune-bashing-abu-dhabi/",
+      "priority": "P3"
+    },
+    {
+      "keyword": "abu dhabi quad biking",
+      "search_intent": "commercial / activity",
+      "hypothesized_primary_url": "https://www.arabiansafariroyal.com/quad-biking-abu-dhabi/",
+      "priority": "P4"
+    },
+    {
+      "keyword": "abu dhabi camel ride",
+      "search_intent": "commercial / activity",
+      "hypothesized_primary_url": "https://www.arabiansafariroyal.com/camel-riding-abu-dhabi/",
+      "supporting_urls": ["https://www.arabiansafariroyal.com/camel-farm-abu-dhabi/"],
+      "priority": "P4"
+    },
+    {
+      "keyword": "desert safari from dubai",
+      "search_intent": "commercial",
+      "hypothesized_primary_url": "https://www.arabiansafariroyal.com/desert-safari-from-dubai-airport/",
+      "priority": "P4"
+    },
+    {
+      "keyword": "dubai desert safari",
+      "search_intent": "commercial / head term (secondary geo)",
+      "hypothesized_primary_url": "https://www.arabiansafariroyal.com/dubai-desert-safari/",
+      "priority": "P3"
+    },
+    {
+      "keyword": "dubai city tour / abu dhabi city tour",
+      "search_intent": "commercial",
+      "hypothesized_primary_url": "NOT FOUND IN CURRENT SITEMAP",
+      "finding": "No page in the current 206-URL inventory directly targets 'Dubai City Tour' or 'Abu Dhabi City Tour' as its own page (closest are attraction-specific informational pages like /abu-dhabi-itinerary/, /dubai-night-tour/, /dubai-to-hatta-tour/). This is a listed related topic in the brief with no owning URL yet.",
+      "required_action": "Check GSC for existing impressions on these terms against any page before deciding whether a dedicated page is warranted, per the New Page Creation Rule — do not create speculatively.",
+      "priority": "P2"
+    },
+    {
+      "keyword": "airport layover tours / private dubai tours / private abu dhabi tours",
+      "search_intent": "commercial",
+      "hypothesized_primary_url": "https://www.arabiansafariroyal.com/dubai-airport-layover-tour/ and https://www.arabiansafariroyal.com/abu-dhabi-night-layover-tour/",
+      "finding": "13-page layover/stopover cluster already exists (see cannibalization.json cluster 'layover_stopover'). This is well covered structurally; needs GSC-based dedup check, not new pages.",
+      "priority": "P2"
+    }
+  ]
+}
