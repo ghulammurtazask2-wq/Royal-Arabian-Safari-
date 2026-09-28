@@ -92,7 +92,8 @@ def wp_resave_page(item_id, page_id):
     """PUT the page's own current content back unchanged, to trigger any
     on-save recalculation (e.g. reading-time estimate)."""
     try:
-        get_r = session.get(f"{SITE}/wp-json/wp/v2/pages/{page_id}?_fields=content", timeout=30)
+        get_r = session.get(f"{SITE}/wp-json/wp/v2/pages/{page_id}",
+                             params={"_fields": "content", "context": "edit"}, timeout=30)
         if get_r.status_code != 200:
             log(item_id, False, f"could not read page {page_id} before resave: {get_r.status_code}")
             return
@@ -108,17 +109,6 @@ def wp_resave_page(item_id, page_id):
             log(item_id, False, f"page {page_id} resave -> {put_r.status_code}: {put_r.text[:300]}")
     except Exception as exc:
         log(item_id, False, f"Request error on page {page_id} resave: {exc}")
-
-
-def rankmath_diagnostic_redirections():
-    """Read-only: list RankMath redirections to see if anything targets
-    the 403'ing stargazing URL. Never writes."""
-    try:
-        r = session.get(f"{SITE}/wp-json/rankmath/v1/status/getViewData", timeout=30)
-        log("diag-redirections", r.status_code == 200,
-            f"status/getViewData -> {r.status_code}: {r.text[:500]}")
-    except Exception as exc:
-        log("diag-redirections", False, f"Request error: {exc}")
 
 
 STALE_DOMAIN = "blanchedalmond-parrot-567394.hostingersite.com"
@@ -159,7 +149,7 @@ def fix_stale_domain_sitewide():
                 pid = item["id"]
                 get_r = session.get(
                     f"{SITE}/wp-json/wp/v2/{post_type}/{pid}",
-                    params={"_fields": "content,link"}, timeout=30,
+                    params={"_fields": "content,link", "context": "edit"}, timeout=30,
                 )
                 if get_r.status_code != 200:
                     continue
@@ -196,7 +186,8 @@ def add_tourist_trip_schema(item_id, page_id):
     none). Additive only -- appends a new <script> block, never touches
     existing content."""
     try:
-        get_r = session.get(f"{SITE}/wp-json/wp/v2/pages/{page_id}?_fields=content,link", timeout=30)
+        get_r = session.get(f"{SITE}/wp-json/wp/v2/pages/{page_id}",
+                             params={"_fields": "content,link", "context": "edit"}, timeout=30)
         if get_r.status_code != 200:
             log(item_id, False, f"could not read page {page_id}: {get_r.status_code}")
             return
@@ -310,9 +301,6 @@ def main():
     }
     for media_id, alt in alt_text_map.items():
         wp_update_media_alt("media-alt-text-gap", media_id, alt)
-
-    # --- Diagnostics only, no writes: check for anything tied to the 403 ---
-    rankmath_diagnostic_redirections()
 
     # --- P0-adjacent: sitewide stale staging-domain replacement ---
     # Found affecting the homepage, /abu-dhabi-desert-safari-tours/ and
