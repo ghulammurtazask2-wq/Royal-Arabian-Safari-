@@ -179,6 +179,34 @@ def fix_stale_domain_sitewide():
         f"{total_pages_fixed} page(s)/post(s) fixed, {total_occurrences_fixed} total occurrence(s) replaced")
 
 
+def verify_live(check_id, url, expect_substring=None, unexpect_substring=None):
+    """Fetch the actual public URL exactly as a visitor or Googlebot would
+    (no auth, cache-busting query param + headers) and check whether the
+    change is really visible, rather than trusting a 200 from a write
+    endpoint. Logs response cache-related headers too, since a mismatch
+    here most likely means a caching layer (LiteSpeed, or a CDN in front
+    of it) is serving stale HTML rather than the edit having failed."""
+    import random
+    bust_url = f"{url}{'&' if '?' in url else '?'}_verify={random.randint(100000,999999)}"
+    try:
+        r = requests.get(bust_url, timeout=30,
+                          headers={"Cache-Control": "no-cache", "Pragma": "no-cache"})
+        cache_headers = {k: v for k, v in r.headers.items()
+                          if "cache" in k.lower() or k.lower() in ("age", "cf-cache-status", "x-litespeed-cache")}
+        has_expected = expect_substring is None or expect_substring in r.text
+        has_unexpected = unexpect_substring is not None and unexpect_substring in r.text
+        ok = has_expected and not has_unexpected
+        parts = []
+        if expect_substring is not None:
+            parts.append(f"expected {'FOUND' if has_expected else 'MISSING'}")
+        if has_unexpected:
+            parts.append("unwanted text still present")
+        parts.append(f"cache headers: {cache_headers}")
+        log(check_id, ok, f"live GET {url} -> " + "; ".join(parts))
+    except Exception as exc:
+        log(check_id, False, f"verify request error on {url}: {exc}")
+
+
 def add_tourist_trip_schema(item_id, page_id):
     """Append TouristTrip/Offer JSON-LD to a money page's content, mirroring
     the Product+AggregateOffer schema pattern already used on the homepage
@@ -312,6 +340,37 @@ def main():
 
     # --- P2: missing commercial schema on the main money page ---
     add_tourist_trip_schema("missing-commercial-schema", 13997)
+
+    # --- Best-effort cache purge attempt before verifying. LiteSpeed Cache
+    # is confirmed installed; WP core's save_post hooks (which REST edits
+    # do fire) normally trigger its auto-purge, but that may not cover a
+    # separate edge/CDN cache if one exists in front of it. This is a
+    # guess at LiteSpeed's REST purge-all route -- logged fully either way,
+    # never assumed to have worked. ---
+    try:
+        r = session.post(f"{SITE}/wp-json/litespeed/v1/purge", json={"type": "all"}, timeout=30)
+        log("cache-purge-attempt", r.status_code == 200, f"litespeed purge -> {r.status_code}: {r.text[:300]}")
+    except Exception as exc:
+        log("cache-purge-attempt", False, f"Request error: {exc}")
+
+    # --- VERIFY: check the actual public pages reflect the writes above,
+    # instead of trusting the write endpoints' 200 responses. A previous
+    # run reported 70/70 success but a manual check afterward found the
+    # live front-end still showing pre-fix content on multiple pages --
+    # this step exists so that never gets reported as "fixed" again
+    # without independent confirmation. ---
+    verify_live("verify-price-evening-safari", f"{SITE}/evening-desert-safari-abu-dhabi/",
+                "AED 35", unexpect_substring="AED 50 per person")
+    verify_live("verify-price-dubai-page", f"{SITE}/dubai-desert-safari-price/",
+                "AED 35", unexpect_substring="USD 14 per person")
+    verify_live("verify-terms-meta", f"{SITE}/terms-conditions/",
+                "booking, cancellation, payment and liability", unexpect_substring="Quad biking in Abu Dhabi")
+    verify_live("verify-stub-noindex", f"{SITE}/self-drive-desert-safari-dubai/",
+                'name="robots" content="noindex')
+    verify_live("verify-stale-domain-homepage", f"{SITE}/", "x", unexpect_substring=STALE_DOMAIN)
+    verify_live("verify-stale-domain-tours", f"{SITE}/abu-dhabi-desert-safari-tours/", "x",
+                unexpect_substring=STALE_DOMAIN)
+    verify_live("verify-schema-tours", f"{SITE}/abu-dhabi-desert-safari-tours/", '"@type":"TouristTrip"')
 
     print("\n\n===== SUMMARY =====")
     ok = sum(1 for r in results if r["ok"])
