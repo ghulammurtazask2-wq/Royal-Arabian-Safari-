@@ -5,8 +5,8 @@
     {
       "id": "sitemap-gap-37-pages",
       "priority": "P0",
-      "title": "37 live, indexable WordPress pages are missing from the XML sitemap",
-      "evidence": "WP REST API lists 244 published pages+posts. The sitemap (sitemap_index.xml -> page-sitemap.xml + post-sitemap.xml) lists only 206 (later reconciled to 207 after excluding one legitimate redirect). Diffing the two gives 37 URLs that exist and are live on WordPress but are absent from the sitemap Google/Bing actually crawl from. Spot-checked 6 of the 37 directly: 5 are confirmed live, robots='index, follow', fully built pages with 30-50 minute reading time and complete Open Graph/Twitter/geo meta (dubai-city-tour, abu-dhabi-city-tour, evening-desert-safari-abu-dhabi, sheikh-zayed-grand-mosque-tour, things-to-do-in-dubai). 1 of the 6 (desert-safari-dubai-price) is a legitimate 301 redirect to dubai-desert-safari-price and is correctly excluded -- not a bug.",
+      "title": "37 live, indexable WordPress pages are missing from the XML sitemap -- FULLY CONFIRMED (38/38 sampled)",
+      "evidence": "WP REST API lists 244 published pages+posts. The sitemap (sitemap_index.xml -> page-sitemap.xml + post-sitemap.xml) lists only 206. Diffing the two gives 38 URLs that exist and are live on WordPress but are absent from the sitemap Google/Bing actually crawl from. ALL 38 have now been individually sampled (not just spot-checked): 37/38 are confirmed live, robots='index, follow', fully built, unique commercial pages (real AED prices, specific comparisons, honest-review angles, 'no affiliate links' trust lines) -- this is essentially the site's entire Dubai/Abu Dhabi 'things to do, city tours, attractions' vertical (Ferrari World, Warner Bros World, SeaWorld, Louvre Abu Dhabi, Qasr Al Watan, Al Ain, multiple city-tour variants, multiple 'things to do' roundups, transfer/taxi-fare pages). 1/38 (desert-safari-dubai-price) is a legitimate 301 redirect to dubai-desert-safari-price and is correctly excluded -- not a bug.",
       "affected_urls_sample": [
         "https://www.arabiansafariroyal.com/dubai-city-tour/",
         "https://www.arabiansafariroyal.com/abu-dhabi-city-tour/",

@@ -5,7 +5,7 @@
   "total_wp_published": 244,
   "total_in_sitemap": 206,
   "total_orphaned_from_sitemap": 38,
-  "sampled_count": 16,
+  "sampled_count": 48,
   "pages": [
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-dubai/",
@@ -795,12 +795,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-09-27T11:59:24",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Car with Driver in Abu Dhabi — Priced per Car, All In",
+      "meta_description": "Car with driver in Abu Dhabi: tolls, fuel, parking and child seats included. Overtime quoted up front, flights tracked, cancel free to 12 hours.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/full-day-dubai-city-tour/",
@@ -810,12 +810,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-23T22:24:04",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Full-Day Dubai City Tour AED 899 Per Car | 8 Hours",
+      "meta_description": "Full-day Dubai city tour: AED 899 per car, not per person. 8 hours, Old and New Dubai, private 4x4 with driver and hotel pickup.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/al-ain-city-tour/",
@@ -825,12 +825,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-09-25T09:14:05",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Al Ain City Tour from Abu Dhabi — Per Car, Real Stop Times",
+      "meta_description": "Al Ain day tour from Abu Dhabi: 90 minutes each way, real time at each stop, UNESCO sites explained. Per car, children free, cancel free to 12 hours.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-airport-transfer/",
@@ -840,12 +840,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-09-21T09:44:05",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Abu Dhabi Airport Transfer — Fixed Price, Driver Waiting",
+      "meta_description": "AUH taxi is AED 74–80. Our transfer is fixed-price with meet & greet. Here is exactly when each one is right.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-to-dubai-taxi-fare/",
@@ -855,12 +855,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-24T21:28:49",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Abu Dhabi to Dubai Taxi Fare — AED 250–330",
+      "meta_description": "Taxi AED 260–330. Uber AED 300–450+. Bus AED 21. The real numbers, and when each one is right.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-layover-tour/",
@@ -870,12 +870,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-09-23T10:36:50",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Abu Dhabi Layover Tour — Built Around Your Flight Time",
+      "meta_description": "Abu Dhabi layover tour timed to your flight. Flight tracked, bags in the car, back three hours before departure. Under five hours we say stay put.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-city-tour-with-baps-temple/",
@@ -885,12 +885,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-09-22T19:26:22",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Abu Dhabi City Tour with BAPS Temple: Registration Done",
+      "meta_description": "Abu Dhabi city tour with BAPS Hindu Mandir. We register you in advance, warn you about Mondays, and price per car so children add nothing.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/seaworld-abu-dhabi/",
@@ -900,12 +900,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-24T21:28:55",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "SeaWorld Abu Dhabi — The First SeaWorld With No Orcas",
+      "meta_description": "8 realms, 100+ animal experiences, a working rescue centre — and no orcas. Tickets from AED 124 if you check. We sell none of them.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/warner-bros-world-abu-dhabi/",
@@ -915,12 +915,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-24T21:28:57",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Warner Bros World Abu Dhabi — Rides, Tickets & Honest Review",
+      "meta_description": "29 rides across 6 lands, entirely air-conditioned. Do not pay the AED 475 walk-up — the family offer is roughly half. We sell no tickets.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/best-time-to-visit-dubai/",
@@ -930,12 +930,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-23T22:24:56",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Best Time to Visit Dubai: Month by Month (2026) — What Closes in Summer",
+      "meta_description": "The best time to visit Dubai is November to March. Month-by-month table: temperature, humidity, sea, crowds and what closes in summer.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-itinerary/",
@@ -945,12 +945,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-23T22:25:00",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Dubai Itinerary: 1, 2, 3, 5 & 7 Days by a Local Operator",
+      "meta_description": "The real Dubai itinerary — 1 to 7 days with exact drive times, honest AED prices and what to skip. Written by a DTCM-licensed Dubai tour operator.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/ferrari-world-abu-dhabi/",
@@ -960,12 +960,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-24T21:29:01",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Ferrari World Abu Dhabi — Rides, Formula Rossa & Is It Worth It?",
+      "meta_description": "0 to 240 km/h in 4.9 seconds. They give you goggles, and there is a reason. Every ride ranked, and an honest verdict from a company that sells no tickets.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-at-night/",
@@ -975,12 +975,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-09-23T19:42:53",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Dubai at Night: Best Places to Visit, Most of Them Free",
+      "meta_description": "Where to go in Dubai at night, mostly free: Fountain show times, the Gold Souk, the Marina and Old Dubai, plus private evening tours from AED 699 (USD 190).",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/louvre-abu-dhabi/",
@@ -990,12 +990,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-24T21:29:05",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Louvre Abu Dhabi — Tickets, Timings & What Is Free",
+      "meta_description": "AED 70. Under-18s free. The dome and plaza are free without a ticket. Closed Mondays — the most common wasted trip in Abu Dhabi.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-fountain-show/",
@@ -1005,12 +1005,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-23T22:25:21",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Dubai Fountain Show: Times, Best Free Views & Everything to Know",
+      "meta_description": "Dubai Fountain show times, the best free viewing spots, how it works, and what to skip. The tallest performing fountain in the world — and it is completely free.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/qasr-al-watan/",
@@ -1020,12 +1020,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-24T21:29:09",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Qasr Al Watan — Tickets, Timings, Dress Code & Parking",
+      "meta_description": "AED 65, not free. Parking is free. The light show is included. Allow 2–3 hours — most people allow one.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/things-to-do-in-dubai-with-kids/",
@@ -1035,12 +1035,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-23T22:25:33",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Things to Do in Dubai With Kids: Age-by-Age Guide & Real Prices",
+      "meta_description": "The best things to do in Dubai with kids — by age, with real prices, what to skip, and honest desert safari advice for children. From a DTCM-licensed operator.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/free-things-to-do-in-abu-dhabi/",
@@ -1050,12 +1050,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-24T21:29:12",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "30 Free Things to Do in Abu Dhabi — Entry Cost: AED 0",
+      "meta_description": "The best thing in Abu Dhabi is free. A full day of ten stops for AED 0 in entry fees. Plus the paid attractions some lists wrongly call free.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/things-to-do-in-abu-dhabi/",
@@ -1065,12 +1065,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-24T21:29:15",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Things to Do in Abu Dhabi — 18 Attractions, Every Price Listed",
+      "meta_description": "Six of the best things in Abu Dhabi are completely free — including the Sheikh Zayed Grand Mosque. Full price list, one-day route, and honest advice.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/things-to-do-in-dubai-mall/",
@@ -1080,12 +1080,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-23T22:25:50",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Things to Do in Dubai Mall: Free Attractions & Floor Guide 2026",
+      "meta_description": "Everything to do in Dubai Mall — which attractions are free, a floor-by-floor guide, Dubai Fountain show times, and what to skip. No affiliate links.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/sheikh-zayed-grand-mosque-tour/",
@@ -1110,12 +1110,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-23T22:26:02",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "25 Free Things to Do in Dubai (Incl. the AED 1 Abra Ride)",
+      "meta_description": "25 genuinely free things to do in Dubai — including the AED 1 abra across Dubai Creek that the top guides leave out. What is free, what actually costs money. No affiliate links.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-bus-tour/",
@@ -1125,12 +1125,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-09-27T12:02:11",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Abu Dhabi Bus Tour vs Private Car — an Honest Comparison",
+      "meta_description": "Abu Dhabi bus tour or private car? We sell cars and still say take the bus if you are two. Frequency, last-bus times and child prices compared.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-tour-packages/",
@@ -1140,12 +1140,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-09-27T12:03:38",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Abu Dhabi Tour Packages — Per Car from AED 699",
+      "meta_description": "Abu Dhabi tour packages priced per car from AED 699, not per person. Children free, no deposit, tickets at gate price, cancel free to 12 hours.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/indoor-things-to-do-in-dubai/",
@@ -1155,12 +1155,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-23T22:26:19",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Indoor Things to Do in Dubai: Free Options, Prices & What to Skip",
+      "meta_description": "The best indoor things to do in Dubai — which are free, which tickets are worth it, and which to skip. Plus the heat-smart day plan. No affiliate links.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-city-tour-price/",
@@ -1170,12 +1170,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-09-21T10:21:16",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Abu Dhabi City Tour Price: AED 699 per Car, All In",
+      "meta_description": "Real Abu Dhabi city tour prices: AED 699 to 1,499 per car, not per person. No deposit, no booking fee, tolls included, cancel free to 12 hours.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/things-to-do-in-dubai/",
@@ -1200,12 +1200,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-09-16T11:26:20",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Full Day Abu Dhabi City Tour — AED 899 per Car",
+      "meta_description": "AED 899 per car for up to 6 guests, not per person. The only version with time to go inside Qasr Al Watan or the Louvre. WhatsApp +971 58 228 2683.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/private-abu-dhabi-city-tour/",
@@ -1215,12 +1215,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-09-27T12:04:54",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Private Abu Dhabi City Tour — AED 699 per Car",
+      "meta_description": "Private Abu Dhabi city tour from AED 699 per car, not per person. Real hours, mosque access pass booked for you, children free, cancel free to 12 hours.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-sightseeing/",
@@ -1230,12 +1230,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-09-23T19:42:58",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Dubai Sightseeing: Top 10 Places, Free Spots and Prices",
+      "meta_description": "Dubai sightseeing: the top 10 places worth your time, what is free, what each costs, and the route that beats the traffic. Private car from AED 699 (USD 190).",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-city-tour-with-ferrari-world/",
@@ -1245,12 +1245,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-09-23T19:26:26",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Abu Dhabi City Tour with Ferrari World — Entry Optional",
+      "meta_description": "Abu Dhabi city tour with Ferrari World, priced per car with park entry as your choice, not a forced bundle. Children free, cancel free to 12 hours.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/one-day-in-dubai/",
@@ -1260,12 +1260,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-23T22:26:52",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "One Day in Dubai: Hour-by-Hour Plan From a Local Operator",
+      "meta_description": "One day in Dubai — the exact hour-by-hour plan: Al Fahidi, the Creek abra, Gold Souk, Burj Khalifa, Dubai Frame, Palm Jumeirah and the Marina.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-city-tour-from-dubai/",
@@ -1275,12 +1275,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-09-27T12:06:12",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Abu Dhabi City Tour from Dubai: Private Car, Per Vehicle",
+      "meta_description": "Private Abu Dhabi city tour from Dubai, priced per car not per person. Tolls, fuel and the free mosque access pass included. Free cancellation to 12 hours.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/old-dubai-city-tour/",
@@ -1290,12 +1290,12 @@
       "in_sitemap": false,
       "wp_modified": "2026-08-23T22:27:03",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
-      "title": null,
-      "meta_description": null,
+      "crawl_status": "sampled_2026-09-28-r3",
+      "title": "Old Dubai City Tour AED 699 Per Car | Al Fahidi & Souks",
+      "meta_description": "Old Dubai city tour from AED 699 per car, not per person. Al Fahidi wind towers, the Creek abra, Gold and Spice Souks. Private 4x4, hotel pickup.",
       "canonical": null,
-      "robots_meta": null,
-      "notes": null
+      "robots_meta": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "notes": "ORPHANED FROM SITEMAP -- confirmed live, indexable (robots: index,follow), well-built commercial page. Part of city_tour_attractions_cluster sitemap-gap issue -- see technical_issues.json."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-city-tour/",
