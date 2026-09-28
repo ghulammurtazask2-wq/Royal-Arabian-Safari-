@@ -5,7 +5,7 @@
   "total_wp_published": 244,
   "total_in_sitemap": 206,
   "total_orphaned_from_sitemap": 38,
-  "sampled_count": 191,
+  "sampled_count": 201,
   "pages": [
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-dubai/",
@@ -1770,12 +1770,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-28T08:00:11",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r20",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct Moreeb Dune (tallest UAE dune) guide. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/liwa-overnight-desert-safari/",
@@ -1800,12 +1800,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:29:37",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r20",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct Liwa Oasis/Empty Quarter guide. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-vip-upgrade-pressure-policy/",
@@ -1935,12 +1935,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T18:40:58",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r20",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct camping-spots guide (free vs paid options). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/camel-farm-abu-dhabi/",
@@ -1980,12 +1980,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T18:37:41",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r20",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct dune-comparison guide (Al Khatim vs Liwa vs fossil dunes). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/sunrise-desert-safari-abu-dhabi/",
@@ -2010,12 +2010,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T18:27:58",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r20",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Honestly notes the attraction is temporarily closed -- strong freshness/trust signal. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/night-desert-safari-abu-dhabi/",
@@ -2055,12 +2055,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T17:40:26",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r20",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "CRITICAL BUG: live front-end URL returns HTTP 403 (reproduced twice), despite being a fully-built (101,877 char), published, sitemap-listed, recently-modified page confirmed via REST API. See technical_issues.json live-403-stargazing-page."
     },
     {
       "url": "https://www.arabiansafariroyal.com/best-time-for-desert-safari-abu-dhabi/",
@@ -2205,12 +2205,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T12:19:25",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r20",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct camp-inclusions transparency angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/layover-desert-safari-abu-dhabi/",
@@ -2580,12 +2580,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T13:05:30",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r20",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct location-comparison angle (vs Al Khaznah/Liwa). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/can-you-wear-shorts-desert-safari-abu-dhabi/",
@@ -3000,12 +3000,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T15:37:35",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r20",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct distance/logistics angle with GPS coordinates. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-pregnant/",
@@ -3270,12 +3270,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T13:51:07",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r20",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct 14-activity roundup hub. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/half-day-desert-safari-abu-dhabi/",

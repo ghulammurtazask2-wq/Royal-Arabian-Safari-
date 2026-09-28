@@ -111,6 +111,16 @@
       "evidence": "Both pages have correct, on-topic titles ('Terms & Conditions | Royal Arabian Safari', 'Privacy Policy | Royal Arabian Safari'), but their meta descriptions are entirely unrelated to their content: /terms-conditions/ shows 'Quad biking in Abu Dhabi desert safari from AED 50. ATV rides on golden dunes with safety gear included...'; /privacy-policy/ shows 'Morning desert safari Abu Dhabi: 6-10 AM sunrise dunes, dune bashing, camel ride and sandboarding. From AED 35...'. These read like descriptions copy-pasted or auto-populated from unrelated commercial pages.",
       "recommended_fix": "Write accurate, topic-appropriate meta descriptions for both legal pages. Low SEO value either way (these pages rarely rank for commercial terms) but the current descriptions look unprofessional/broken in a Google snippet or when shared, and are worth a 2-minute fix.",
       "requires": "WordPress edit access."
+    },
+    {
+      "id": "live-403-stargazing-page",
+      "priority": "P0",
+      "title": "A fully-built, sitemap-listed, recently-updated page returns a hard 403 on its live front-end URL",
+      "url": "https://www.arabiansafariroyal.com/stargazing-abu-dhabi-desert/",
+      "evidence": "Reproduced twice: fetching this URL directly returns HTTP 403 (target_http_error), both times, with no other errors in the same batch of 10 URLs -- every sibling page in the same request succeeded normally. Confirmed via the WP REST API (a different code path) that the page is real, published (status: publish), fully built (101,877 characters of content, same structure as every other page on the site), and was modified recently (2026-09-27T17:40:26, the day before this audit). It is also listed in the XML sitemap (in_sitemap: true in this session's inventory) with lastmod matching that same recent edit. This means the page is being actively advertised to Google via the sitemap as available, while the live URL is actually inaccessible -- to any visitor, and very likely to Googlebot too, since a 403 is a hard block crawlers respect immediately and can cause de-indexing or prevent indexing of a freshly-published page.",
+      "likely_cause": "Not confirmed without server/plugin-admin access. Isolated to this one URL out of 190+ successfully fetched this session, so a domain-wide block is ruled out. Most likely a security plugin / WAF rule matching something specific to this URL or its recently-edited content, or a broken rewrite/redirect rule introduced by the same edit that updated it yesterday.",
+      "recommended_fix": "Check the site's security plugin / firewall logs (or hosting-level WAF, e.g. via LiteSpeed or a security plugin like Wordfence if installed) for a rule blocking this specific URL, and check for a broken redirect/rewrite rule tied to this slug. This is a live outage on a real, finished page -- higher urgency than the sitemap-gap or price-mismatch findings since visitors and Googlebot cannot reach the page at all right now.",
+      "requires": "WordPress/hosting admin access to check firewall and redirect configuration."
     }
   ]
 }
