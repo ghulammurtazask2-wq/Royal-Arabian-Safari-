@@ -5,7 +5,7 @@
   "total_wp_published": 244,
   "total_in_sitemap": 206,
   "total_orphaned_from_sitemap": 38,
-  "sampled_count": 166,
+  "sampled_count": 176,
   "pages": [
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-dubai/",
@@ -120,12 +120,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-24T06:46:36",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r17",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct honest-verdict angle, discloses it doesn't sell the boat directly. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/6-hour-layover-in-dubai/",
@@ -360,12 +360,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-23T19:42:48",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r17",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 699/$190). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-attraction-transfers/",
@@ -375,12 +375,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:21:26",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r17",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct transfer-logistics angle, clear on what's included/excluded. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-to-hatta-tour/",
@@ -390,12 +390,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:21:31",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r17",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 1,199). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-from-dubai-airport/",
@@ -690,12 +690,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-21T09:51:36",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r17",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct night-logistics angle (mosque last entry time). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-cruise-terminal/",
@@ -720,12 +720,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:23:32",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r17",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct attraction-guide angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/wahat-al-karama-abu-dhabi/",
@@ -735,12 +735,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:23:37",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r17",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct memorial-site guide angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/mamsha-al-saadiyat/",
@@ -750,12 +750,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:23:42",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r17",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct beach/promenade guide angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/heritage-village-abu-dhabi/",
@@ -765,12 +765,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:23:47",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r17",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct free-attraction guide angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/corniche-beach-abu-dhabi/",
@@ -780,12 +780,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:23:51",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r17",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct beach guide angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/car-with-driver-in-abu-dhabi/",
