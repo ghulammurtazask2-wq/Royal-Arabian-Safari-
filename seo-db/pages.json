@@ -5,7 +5,7 @@
   "total_wp_published": 244,
   "total_in_sitemap": 206,
   "total_orphaned_from_sitemap": 38,
-  "sampled_count": 85,
+  "sampled_count": 95,
   "pages": [
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-dubai/",
@@ -15,12 +15,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:19:27",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r8",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 999 in both title and meta)."
     },
     {
       "url": "https://www.arabiansafariroyal.com/is-dubai-expensive/",
@@ -1395,12 +1395,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:27:39",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r8",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 799/999 in both title and meta)."
     },
     {
       "url": "https://www.arabiansafariroyal.com/red-dune-desert-safari-dubai/",
@@ -1440,12 +1440,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-15T21:54:55",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r8",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (USD 14 in both title/meta, no H1 price stated to conflict)."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-desert-safari-photos/",
@@ -1560,12 +1560,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-28T08:44:43",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r8",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "No price stated in title/meta (page says 'message us for price' -- deliberate). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/private-desert-safari-dubai/",
@@ -1575,12 +1575,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-28T08:39:21",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r8",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 799 in both title and meta)."
     },
     {
       "url": "https://www.arabiansafariroyal.com/morning-desert-safari-dubai/",
@@ -1590,12 +1590,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-28T08:34:39",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r8",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 799 in both title and meta)."
     },
     {
       "url": "https://www.arabiansafariroyal.com/self-drive-desert-safari-dubai/",
@@ -1605,12 +1605,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-23T19:38:06",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r8",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "BUG FOUND: page is a ~50-word stub despite a full commercial title/meta and index,follow robots -- verified against raw WP content, not a rendering artifact. Equivalent Abu Dhabi page is fully built. See technical_issues.json thin-stub-page-self-drive-dubai."
     },
     {
       "url": "https://www.arabiansafariroyal.com/evening-desert-safari-dubai/",
@@ -1620,12 +1620,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-28T08:27:38",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r8",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 35 stated same in title, meta, H1). No conflict found on THIS page (contrast with its Abu Dhabi sibling which had the bug)."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-desert-safari-price/",
@@ -1635,12 +1635,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-28T08:20:53",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r8",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "BUG FOUND: title/OG/Twitter meta say 'From USD 14' but on-page H1 says 'From AED 35' -- USD 14 ≈ AED 51, not AED 35. Second confirmed occurrence of the title-vs-H1 price mismatch pattern -- see technical_issues.json price-mismatch-evening-safari."
     },
     {
       "url": "https://www.arabiansafariroyal.com/al-awir-desert-safari-dubai/",
@@ -1665,12 +1665,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-28T08:14:07",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r8",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct pillar page for Dubai head term, price consistent (USD 14 title/meta, no H1 price to conflict)."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-itinerary/",
