@@ -65,7 +65,7 @@
         "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-november/",
         "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-december/"
       ],
-      "evidence": "3 of 12 sampled (Sep, Oct, Dec): each has genuinely distinct, specific content (real sunset times, temperatures, named local events e.g. Liwa Festival/National Day in December). No templated boilerplate detected in the sample. This is NOT flagged as thin/duplicate content based on current evidence.",
+      "evidence": "ALL 12/12 MONTHS NOW SAMPLED (fully confirmed, not a sample): each has genuinely distinct, specific content -- real sunset times, real temperatures, named local events (Liwa Festival/National Day in December), and distinct framing per month (August is honest about being the hottest month, November is framed as best-all-round, March as last-call-before-heat, etc). No templated boilerplate detected anywhere in the cluster. This is confirmed NOT thin/duplicate content.",
       "risk_level": "low",
       "recommended_action": "NO_ACTION_KEEP",
       "action_detail": "Good differentiation observed in sample. Recommend sampling the remaining 9 months in a future cycle to confirm the pattern holds site-wide, and checking internal linking between adjacent months (e.g. does the October page link to September/November) for a coherent seasonal hub."

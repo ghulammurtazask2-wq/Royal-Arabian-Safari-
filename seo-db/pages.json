@@ -5,7 +5,7 @@
   "total_wp_published": 244,
   "total_in_sitemap": 206,
   "total_orphaned_from_sitemap": 38,
-  "sampled_count": 151,
+  "sampled_count": 160,
   "pages": [
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-dubai/",
@@ -1845,12 +1845,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T19:06:50",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r15",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Seasonal variant, unique data (late sunsets past 7PM). Price consistent (AED 35)."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-june/",
@@ -1860,12 +1860,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T19:02:10",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r15",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Seasonal variant, unique data (longest days, ~7:15PM sunset). Price consistent."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-july/",
@@ -1875,12 +1875,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T18:57:23",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r15",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Seasonal variant, unique data (drier-than-coast angle). Price consistent."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-deals/",
@@ -1920,12 +1920,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T18:44:06",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r15",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Seasonal variant, honest hottest-month framing, unique data. Price consistent."
     },
     {
       "url": "https://www.arabiansafariroyal.com/camping-in-abu-dhabi/",
@@ -2955,12 +2955,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T15:45:26",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r15",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Seasonal variant, unique data (31C days, earliest sunsets). Price consistent."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-december/",
@@ -3045,12 +3045,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T15:29:55",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r15",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Seasonal variant, unique data (24.5C days, clearest stars). Price consistent."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-february/",
@@ -3060,12 +3060,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T15:27:02",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r15",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Seasonal variant, unique data (sweet-spot framing). Price consistent."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-march/",
@@ -3075,12 +3075,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T15:24:13",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r15",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Seasonal variant, unique data (last-call-before-heat framing). Price consistent."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-april/",
@@ -3090,12 +3090,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T15:21:50",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r15",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Seasonal variant, unique data (35C days, hot-days-perfect-evenings framing). Price consistent."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-tickets/",
