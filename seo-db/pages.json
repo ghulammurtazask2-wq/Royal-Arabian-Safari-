@@ -5,7 +5,7 @@
   "total_wp_published": 244,
   "total_in_sitemap": 206,
   "total_orphaned_from_sitemap": 38,
-  "sampled_count": 95,
+  "sampled_count": 105,
   "pages": [
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-dubai/",
@@ -195,12 +195,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-25T23:03:50",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r9",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct comparative/decision-framework angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-to-abu-dhabi-taxi-fare/",
@@ -225,12 +225,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-24T06:46:45",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r9",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct scam-avoidance angle citing government registers. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/first-time-in-dubai/",
@@ -255,12 +255,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:20:53",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r9",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct honest-answer/tourist-trap angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-airport-to-downtown/",
@@ -300,12 +300,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-25T23:19:55",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r9",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 50/seat, AED 799/car in both title and meta). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/romantic-desert-safari-dubai/",
@@ -315,12 +315,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:21:10",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r9",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 899 for two in both title and meta). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/family-desert-safari-dubai/",
@@ -330,12 +330,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-26T08:12:46",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r9",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 799 in both title and meta). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/camel-ride-dubai/",
@@ -1350,12 +1350,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:27:25",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r9",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 35 in both title and meta). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dune-bashing-dubai/",
@@ -1380,12 +1380,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-26T11:13:32",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r9",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "THIRD occurrence of unverified '4.9 star' claim (meta description: 'what guests say about our 4.9 star safari'). See technical_issues.json unverified-rating-claim."
     },
     {
       "url": "https://www.arabiansafariroyal.com/sunrise-desert-safari-dubai/",
@@ -1410,12 +1410,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:27:43",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r9",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 35 in both title and meta). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-dubai-without-dune-bashing/",
@@ -1425,12 +1425,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:27:48",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r9",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 35 in both title and meta). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-desert-safari-tickets/",
