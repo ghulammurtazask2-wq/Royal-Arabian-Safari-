@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-09-28",
+  "note": "Structural cannibalization candidates identified from URL/topic clustering and on-page sampling only. None of these have been verified against actual GSC query-level ranking data (not available in this session). Per the cannibalization rules, no MERGE/REDIRECT action should be taken on any cluster below until query-level evidence is pulled -- these are flagged for review, not for action.",
+  "clusters": [
+    {
+      "cluster_id": "core-pillar-cluster",
+      "query_theme": "abu dhabi desert safari (head term) / tours / prices / tickets / what to expect / reviews",
+      "urls": [
+        "https://www.arabiansafariroyal.com/",
+        "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-tours/",
+        "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-prices/",
+        "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-tickets/",
+        "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-what-to-expect/",
+        "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-reviews/"
+      ],
+      "evidence": "On-page sampling of the homepage, /abu-dhabi-desert-safari-tours/ and /abu-dhabi-desert-safari-prices/ shows heavy topical overlap: all three cover packages, pricing, FAQs and booking/cancellation content. /abu-dhabi-desert-safari-tours/ and /abu-dhabi-desert-safari-prices/ each run to 90-100+ H2 sections and both contain near-identical section titles ('Book this tour', 'If we have to cancel, what happens?', 'Planning the Rest of Your Abu Dhabi Trip', full pricing breakdowns) -- suggesting genuine overlap rather than clean intent separation.",
+      "risk_level": "high",
+      "recommended_action": "VERIFY",
+      "action_detail": "Pull GSC page-level and query-level data for these 6 URLs. If two pages are both getting impressions for the same queries with neither in a stable top position, that is the trigger to differentiate (trim overlapping sections, tighten each page to its distinct intent) rather than merge -- these pages have real commercial value individually (price calculator, tour finder, group booking) and should not be deleted or redirected without that evidence.",
+      "requires_approval_for": ["any MERGE", "any REDIRECT", "any large content removal"]
+    },
+    {
+      "cluster_id": "booking-policy-cluster",
+      "query_theme": "cancellation / refund / pay on arrival",
+      "urls": [
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-cancellation-policy/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-pay-on-arrival/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-refund-complaint-process/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-payment-methods-cash-card/"
+      ],
+      "evidence": "4 distinct policy-question pages exist; not yet sampled for content overlap.",
+      "risk_level": "medium",
+      "recommended_action": "SAMPLE_THEN_VERIFY",
+      "action_detail": "Not yet crawled in this pass. Sample on-page content and cross-reference GSC queries before any decision."
+    },
+    {
+      "cluster_id": "safety-trust-cluster",
+      "query_theme": "safety / scams / suitability",
+      "urls": [
+        "https://www.arabiansafariroyal.com/is-desert-safari-abu-dhabi-safe-complete-safety-guide/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-scams-how-to-avoid/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-safe-for-ladies/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-sandstorm-safety/",
+        "https://www.arabiansafariroyal.com/solo-female-desert-safari-abu-dhabi/"
+      ],
+      "evidence": "Titles suggest distinct sub-intents (general safety, scam avoidance, women travelers, weather safety, solo female travel) rather than duplication.",
+      "risk_level": "low",
+      "recommended_action": "DIFFERENTIATE_LIKELY_OK",
+      "action_detail": "Likely fine as-is; confirm no two pages are targeting the identical query once GSC data is available. No action needed now."
+    },
+    {
+      "cluster_id": "seasonal-month-cluster",
+      "query_theme": "desert safari abu dhabi + [month]",
+      "urls": [
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-january/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-february/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-march/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-april/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-may/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-june/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-july/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-august/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-september/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-october/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-november/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-december/"
+      ],
+      "evidence": "3 of 12 sampled (Sep, Oct, Dec): each has genuinely distinct, specific content (real sunset times, temperatures, named local events e.g. Liwa Festival/National Day in December). No templated boilerplate detected in the sample. This is NOT flagged as thin/duplicate content based on current evidence.",
+      "risk_level": "low",
+      "recommended_action": "NO_ACTION_KEEP",
+      "action_detail": "Good differentiation observed in sample. Recommend sampling the remaining 9 months in a future cycle to confirm the pattern holds site-wide, and checking internal linking between adjacent months (e.g. does the October page link to September/November) for a coherent seasonal hub."
+    },
+    {
+      "cluster_id": "audience-nationality-cluster",
+      "query_theme": "desert safari abu dhabi for [nationality]",
+      "urls": [
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-for-saudis/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-for-pakistanis/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-for-germans/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-for-filipinos/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-for-americans/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-for-british-tourists/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-for-russians/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-for-indians/",
+        "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-for-seniors/"
+      ],
+      "evidence": "3 of 9 sampled (Saudis, Germans, Indians): each has a genuinely distinct angle -- native-language sections (German, Hindi/Urdu), currency conversions (EUR), and culturally specific content (halal/Arabic for Saudis, vegetarian/Jain food for Indians). Not templated duplicates.",
+      "risk_level": "low",
+      "recommended_action": "NO_ACTION_KEEP",
+      "action_detail": "Good differentiation observed. One data-integrity item found on the Indians page: meta description claims '4.9★ 5,000+ reviews' -- this must be a real, verifiable figure before it is ever wired into review/rating schema markup. Flagged separately as a content-integrity item, not a cannibalization issue."
+    }
+  ]
+}
