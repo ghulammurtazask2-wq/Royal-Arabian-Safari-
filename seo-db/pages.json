@@ -5,7 +5,7 @@
   "total_wp_published": 244,
   "total_in_sitemap": 206,
   "total_orphaned_from_sitemap": 38,
-  "sampled_count": 160,
+  "sampled_count": 166,
   "pages": [
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-dubai/",
@@ -2460,12 +2460,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T16:48:33",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r16",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Nationality variant, 7069 words, distinct Urdu/halal/Eid angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-for-germans/",
@@ -2490,12 +2490,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T16:44:58",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r16",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Nationality variant, 7137 words, distinct Tagalog/barkada/OFW angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-for-americans/",
@@ -2505,12 +2505,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T16:43:06",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r16",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Nationality variant, 7058 words, distinct USD-pricing/visa-free angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-drone-footage/",
@@ -2895,12 +2895,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T15:55:33",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r16",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "BUG FOUND: shares a duplicated 'Standard/Premium/VIP Royal' package-pricing module with the Russians page -- identical structure and AED add-on figures. See technical_issues.json duplicated-package-block-british-russian."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-for-russians/",
@@ -2910,12 +2910,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T15:52:55",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r16",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "BUG FOUND: shares a duplicated 'Standard/Premium/VIP Royal' package-pricing module with the British-tourists page -- identical structure and AED add-on figures. See technical_issues.json duplicated-package-block-british-russian."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-for-indians/",
@@ -3240,12 +3240,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T14:59:44",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r16",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Nationality variant, 7401 words, distinct gentle-activities/accessibility framing. No tier-block duplication found. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-activities/",

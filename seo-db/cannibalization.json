@@ -84,10 +84,10 @@
         "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-for-indians/",
         "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-for-seniors/"
       ],
-      "evidence": "3 of 9 sampled (Saudis, Germans, Indians): each has a genuinely distinct angle -- native-language sections (German, Hindi/Urdu), currency conversions (EUR), and culturally specific content (halal/Arabic for Saudis, vegetarian/Jain food for Indians). Not templated duplicates.",
-      "risk_level": "low",
-      "recommended_action": "NO_ACTION_KEEP",
-      "action_detail": "Good differentiation observed. One data-integrity item found on the Indians page: meta description claims '4.9★ 5,000+ reviews' -- this must be a real, verifiable figure before it is ever wired into review/rating schema markup. Flagged separately as a content-integrity item, not a cannibalization issue."
+      "evidence": "ALL 9/9 NOW SAMPLED (fully confirmed). 7 of 9 (Saudis, Germans, Indians, Pakistanis, Filipinos, Americans, Seniors) each have a genuinely distinct angle -- native-language sections (German, Hindi/Urdu, Tagalog, Urdu), currency conversions (EUR, PHP, USD), culturally specific content (halal/Arabic for Saudis, vegetarian/Jain food for Indians, OFW family tips for Filipinos), all 7000+ words. NOT templated duplicates. HOWEVER: British and Russian (2 of 9) DO share a duplicated package-pricing content module -- verified against raw content with template CSS stripped out, identical 'Standard/Premium/VIP Royal' tier structure and identical AED add-on figures on both pages. See technical_issues.json duplicated-package-block-british-russian.",
+      "risk_level": "low overall, medium for the British/Russian pair specifically",
+      "recommended_action": "NO_ACTION_KEEP for 7 of 9; DIFFERENTIATE for British/Russian",
+      "action_detail": "Good differentiation observed on 7/9 pages. British and Russian pages need their shared package-tier module differentiated to match the rest of the cluster -- see technical_issues.json. One data-integrity item found on the Indians page: meta description claims '4.9★ 5,000+ reviews' -- this must be a real, verifiable figure before it is ever wired into review/rating schema markup. Flagged separately as a content-integrity item, not a cannibalization issue."
     }
   ]
 }
