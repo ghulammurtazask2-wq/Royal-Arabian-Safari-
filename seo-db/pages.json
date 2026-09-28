@@ -5,7 +5,7 @@
   "total_wp_published": 244,
   "total_in_sitemap": 206,
   "total_orphaned_from_sitemap": 38,
-  "sampled_count": 65,
+  "sampled_count": 75,
   "pages": [
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-dubai/",
@@ -1755,12 +1755,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-28T08:03:00",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r6",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 35 stated same throughout). Distinct heat-smart-timing angle, not duplicate."
     },
     {
       "url": "https://www.arabiansafariroyal.com/moreeb-dune-liwa/",
@@ -1785,12 +1785,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-28T07:53:38",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r6",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Title/H1 wording differs slightly ('Liwa Overnight...' vs 'Liwa Desert Safari Abu Dhabi -- A Night...') but not a factual conflict, just different phrasing. No price stated in title/meta."
     },
     {
       "url": "https://www.arabiansafariroyal.com/liwa-oasis-abu-dhabi/",
@@ -1815,12 +1815,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T12:10:19",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r6",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Meta description claims '4.9 stars' -- SECOND occurrence of an unverified star-rating claim (first was desert-safari-abu-dhabi-for-indians '4.9★ 5,000+ reviews'). Appears to be a consistent sitewide trust stat, not a one-off typo -- raises the importance of verifying it against a real review source before any AggregateRating schema use. See technical_issues.json unverified-rating-claim."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-september/",
@@ -1890,12 +1890,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T18:52:30",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r6",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent, distinct 'audit the deals ranking above us' competitor-transparency angle matching the site's established voice."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-christmas/",
@@ -1905,12 +1905,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T18:48:16",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r6",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 35). Distinct seasonal-event content."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-august/",
@@ -1965,12 +1965,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T12:12:46",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r6",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 35 all-in). Distinct 'what's included' matrix angle."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-sand-dunes/",
@@ -1995,12 +1995,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T18:31:38",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r6",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 799/999 stated same in title and meta). No H1 price to conflict."
     },
     {
       "url": "https://www.arabiansafariroyal.com/fossil-dunes-abu-dhabi/",
@@ -2025,12 +2025,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T17:46:41",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r6",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 35). Distinct moon-phase/stargazing angle."
     },
     {
       "url": "https://www.arabiansafariroyal.com/contact/",
@@ -2070,12 +2070,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T17:36:44",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r6",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "No price claim. Distinct month-by-month informational angle, has byline author (Royal Arabian Safari) -- good E-E-A-T signal."
     },
     {
       "url": "https://www.arabiansafariroyal.com/what-to-wear-desert-safari-abu-dhabi/",
@@ -2085,12 +2085,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T17:33:41",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r6",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "No price claim. Distinct seasonal/age-based wear guide, has byline author."
     },
     {
       "url": "https://www.arabiansafariroyal.com/about-arabian-safari-royal/",
