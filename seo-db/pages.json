@@ -5,7 +5,7 @@
   "total_wp_published": 244,
   "total_in_sitemap": 206,
   "total_orphaned_from_sitemap": 38,
-  "sampled_count": 176,
+  "sampled_count": 181,
   "pages": [
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-dubai/",
@@ -1680,12 +1680,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:29:06",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r18",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct itinerary-planning hub, links to layover/stopover versions. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/belly-dance-abu-dhabi/",
@@ -2040,12 +2040,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T17:44:46",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r18",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Utility page, title/desc appropriate. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/stargazing-abu-dhabi-desert/",
@@ -2100,12 +2100,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T17:31:57",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r18",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Utility page, cites DCT licensing and 5,000+ guests. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/romantic-desert-safari-abu-dhabi/",
@@ -3540,12 +3540,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-16T17:16:08",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r18",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "BUG FOUND: meta description is about 'Quad biking in Abu Dhabi desert safari from AED 50' -- completely unrelated to Terms & Conditions content. Title is correct, only the description is wrong/mismatched. See technical_issues.json mismatched-utility-page-meta."
     },
     {
       "url": "https://www.arabiansafariroyal.com/privacy-policy/",
@@ -3555,12 +3555,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-16T17:16:10",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r18",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "BUG FOUND: meta description is about 'Morning desert safari Abu Dhabi: 6-10 AM sunrise dunes...' -- completely unrelated to Privacy Policy content. Title is correct, only the description is wrong/mismatched. See technical_issues.json mismatched-utility-page-meta."
     },
     {
       "url": "https://www.arabiansafariroyal.com/morning-desert-safari-abu-dhabi/",

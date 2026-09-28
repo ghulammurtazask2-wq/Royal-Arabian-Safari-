@@ -102,6 +102,15 @@
       "evidence": "VERIFIED against raw stored WP content (not just meta descriptions, and with template CSS/schema boilerplate stripped out first to avoid the false-positive pattern from an earlier retracted finding). After stripping <style>/<script> blocks, a character-level diff of the two pages' prose still shows a large shared 'Standard / Premium / VIP Royal' package-tier module: identical structure, identical wording ('Premium Safari: Standard + quad bike + VIP seating + private sheesha'), and identical AED figures for add-ons (quad bike AED 100 single / AED 100 double with 'Save 50%', VIP majlis AED 67, private sheesha AED 50, photography AED 50-150, extra dune bashing AED 200/150) on BOTH pages, even though they're framed for different nationalities/currencies. Checked whether this extends to the rest of the cluster: it does not -- desert-safari-abu-dhabi-for-{pakistanis,filipinos,americans,seniors} (7000+ words each) and the earlier-sampled {saudis,germans,indians} all have genuinely unique content with no trace of this tier-block phrasing. This is isolated to the British and Russian pages specifically.",
       "recommended_fix": "Differentiate the package/pricing module on at least one of these two pages (British vs Russian), the same way the other 7 nationality pages are differentiated -- e.g. give each page's package tiers distinct framing, local payment-method notes, or drop the shared block in favor of a link to the main pricing page. Low content-quality/cannibalization risk since the two pages target different-language search queries, but worth fixing given every other page in this cluster clears this bar.",
       "requires": "WordPress edit access."
+    },
+    {
+      "id": "mismatched-utility-page-meta",
+      "priority": "P1",
+      "title": "Terms & Conditions and Privacy Policy pages show meta descriptions about desert safaris, not their actual content",
+      "urls": ["https://www.arabiansafariroyal.com/terms-conditions/", "https://www.arabiansafariroyal.com/privacy-policy/"],
+      "evidence": "Both pages have correct, on-topic titles ('Terms & Conditions | Royal Arabian Safari', 'Privacy Policy | Royal Arabian Safari'), but their meta descriptions are entirely unrelated to their content: /terms-conditions/ shows 'Quad biking in Abu Dhabi desert safari from AED 50. ATV rides on golden dunes with safety gear included...'; /privacy-policy/ shows 'Morning desert safari Abu Dhabi: 6-10 AM sunrise dunes, dune bashing, camel ride and sandboarding. From AED 35...'. These read like descriptions copy-pasted or auto-populated from unrelated commercial pages.",
+      "recommended_fix": "Write accurate, topic-appropriate meta descriptions for both legal pages. Low SEO value either way (these pages rarely rank for commercial terms) but the current descriptions look unprofessional/broken in a Google snippet or when shared, and are worth a 2-minute fix.",
+      "requires": "WordPress edit access."
     }
   ]
 }
