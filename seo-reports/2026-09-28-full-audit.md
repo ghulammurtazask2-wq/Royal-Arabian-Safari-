@@ -34,6 +34,7 @@ The site's biggest strength is content quality: this is a large (244-page), genu
 | Add `Offer`/`TouristTrip` (or `Product`) schema consistently across all money pages (currently only spot-confirmed on homepage) | On-Page | Low-Medium | Enables price-in-SERP rich results, matching what GetYourGuide/TripAdvisor already show |
 | Backfill alt text on review/award trust images (20% missing in a 50-image sample) | On-Page | Low | Accessibility + image-search visibility on exactly the images meant to build trust |
 | Verify sitewide `Organization`/`LocalBusiness` schema exists in the theme head (only post-content schema was checked this pass, not the full rendered `<head>`) | On-Page | Low (verification only) | Confirms/fixes entity signals Google uses for brand recognition |
+| Differentiate the shared "Standard/Premium/VIP Royal" package module duplicated between `/desert-safari-abu-dhabi-for-british-tourists/` and `/desert-safari-abu-dhabi-for-russians/` (verified against raw content, not a false positive) | Content | Low | Brings these 2 pages up to the same differentiation standard as the other 7 nationality pages |
 | Resolve the core-pillar cluster's actual ranking owner (tours/prices/tickets/reviews/what-to-expect) once GSC access exists | Content/Competitive | Medium | Concentrates ranking signal instead of splitting it 5 ways |
 
 ## Opportunities (plan for next quarter)
