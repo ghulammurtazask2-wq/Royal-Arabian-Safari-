@@ -24,6 +24,18 @@
 | Reading-time metadata bug | Re-save the page's existing content unchanged, to trigger recalculation | Core `wp/v2/pages` |
 | Media alt-text gap | Backfill descriptive alt text on the 10 identified images | Core `wp/v2/media` |
 | 403 outage on the stargazing guide | Read-only diagnostic pull of RankMath's redirection data, to help locate the cause | RankMath `status` endpoint (GET only) |
+| **Stale staging-domain references (new finding, see below)** | Scans every page/post on the site and replaces every occurrence of the old pre-migration domain with the live one | Core `wp/v2/pages` / `wp/v2/posts` — pure string substitution |
+| Missing commercial schema on the main tours page | Appends `TouristTrip`/`AggregateOffer` JSON-LD, mirroring the pattern already used on the homepage | Core `wp/v2/pages` — additive only |
+
+## New finding while building this: a sitewide stale-domain bug
+
+While pulling the homepage's existing schema markup to use as a template for the tours-page schema fix, its `Product` JSON-LD turned out to reference `blanchedalmond-parrot-567394.hostingersite.com` — a Hostinger auto-generated staging subdomain from before the site moved to `arabiansafariroyal.com` — instead of the live domain. Grepping confirmed this isn't a one-off: **91 occurrences on the homepage, 88 on `/abu-dhabi-desert-safari-tours/`, 93 on `/abu-dhabi-desert-safari-prices/`**, spanning image URLs, video URLs, CSS backgrounds, some inline body-content links, and embedded schema — likely on other pages built the same way, not yet fully mapped. A differently-built page (the Russian nationality page) had zero occurrences, so it's specific to whichever page-building workflow produced these particular pages, not universal.
+
+This is a pure hostname-string substitution — no HTML structure changes — so it's about as low-risk as a live edit gets. The script now scans **every** page and post on the site (not just the 3 confirmed by manual sampling) and fixes any it finds. Full detail in `seo-db/technical_issues.json` → `stale-staging-domain-references`.
+
+## Deliberately not automated: the British/Russian duplicated pricing widget
+
+Looked at this one closely and decided against a scripted edit. The shared block turned out to be a dense, custom pricing component with interdependent inline styles and pre-filled WhatsApp booking links — risky to edit blind with no way to visually verify the result from this session. Reconsidered the actual stakes too: British and Russian pages target completely non-overlapping search results (different languages/countries), so there's no real cannibalization risk despite the shared wording. Recommend a human edit this one directly in the WordPress block editor, where the result can be previewed before publishing. See `seo-db/technical_issues.json` → `duplicated-package-block-british-russian` → `not_auto_fixed_because`.
 
 ## Important caveat: the RankMath endpoint schema is unverified
 

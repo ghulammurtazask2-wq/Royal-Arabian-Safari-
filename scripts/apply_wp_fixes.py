@@ -121,6 +121,122 @@ def rankmath_diagnostic_redirections():
         log("diag-redirections", False, f"Request error: {exc}")
 
 
+STALE_DOMAIN = "blanchedalmond-parrot-567394.hostingersite.com"
+LIVE_HOST = "www.arabiansafariroyal.com"
+
+
+def fix_stale_domain_sitewide():
+    """Pure string substitution: replace every occurrence of the old
+    pre-migration staging domain with the live domain, across every
+    page and post. This is a lossless, structure-preserving edit --
+    only the hostname string changes, nothing else -- so it's about as
+    low-risk as a live content edit gets. Found affecting the homepage,
+    /abu-dhabi-desert-safari-tours/ and /abu-dhabi-desert-safari-prices/
+    in image src, internal link hrefs, CSS background-image urls, video
+    src/poster attributes, and embedded JSON-LD schema (confirmed via
+    this session's read-only audit); scanned here across the whole site
+    since the true scope wasn't fully mapped before this run."""
+    total_pages_fixed = 0
+    total_occurrences_fixed = 0
+    for post_type in ("pages", "posts"):
+        page_num = 1
+        while True:
+            r = session.get(
+                f"{SITE}/wp-json/wp/v2/{post_type}",
+                params={"per_page": 100, "page": page_num, "_fields": "id,link"},
+                timeout=30,
+            )
+            if r.status_code == 400:
+                break  # past the last page
+            if r.status_code != 200:
+                log("stale-domain-sitewide", False,
+                    f"listing {post_type} page {page_num} -> {r.status_code}: {r.text[:300]}")
+                break
+            items = r.json()
+            if not items:
+                break
+            for item in items:
+                pid = item["id"]
+                get_r = session.get(
+                    f"{SITE}/wp-json/wp/v2/{post_type}/{pid}",
+                    params={"_fields": "content,link"}, timeout=30,
+                )
+                if get_r.status_code != 200:
+                    continue
+                body = get_r.json()
+                content = body.get("content", {}).get("raw")
+                if content is None:
+                    continue
+                count = content.count(STALE_DOMAIN)
+                if count == 0:
+                    continue
+                fixed = content.replace(STALE_DOMAIN, LIVE_HOST)
+                put_r = session.post(
+                    f"{SITE}/wp-json/wp/v2/{post_type}/{pid}",
+                    json={"content": fixed}, timeout=30,
+                )
+                if put_r.status_code == 200:
+                    total_pages_fixed += 1
+                    total_occurrences_fixed += count
+                    log("stale-domain-sitewide", True,
+                        f"{post_type}/{pid} ({body.get('link')}): replaced {count} occurrence(s)")
+                else:
+                    log("stale-domain-sitewide", False,
+                        f"{post_type}/{pid} ({body.get('link')}): found {count} but PUT failed "
+                        f"{put_r.status_code}: {put_r.text[:300]}")
+            page_num += 1
+    log("stale-domain-sitewide-total", True,
+        f"{total_pages_fixed} page(s)/post(s) fixed, {total_occurrences_fixed} total occurrence(s) replaced")
+
+
+def add_tourist_trip_schema(item_id, page_id):
+    """Append TouristTrip/Offer JSON-LD to a money page's content, mirroring
+    the Product+AggregateOffer schema pattern already used on the homepage
+    (same @context/@type convention, just added to a page that currently has
+    none). Additive only -- appends a new <script> block, never touches
+    existing content."""
+    try:
+        get_r = session.get(f"{SITE}/wp-json/wp/v2/pages/{page_id}?_fields=content,link", timeout=30)
+        if get_r.status_code != 200:
+            log(item_id, False, f"could not read page {page_id}: {get_r.status_code}")
+            return
+        body = get_r.json()
+        content = body.get("content", {}).get("raw")
+        if content is None:
+            log(item_id, False, "no editable 'raw' content field returned")
+            return
+        if '"@type":"TouristTrip"' in content or '"@type": "TouristTrip"' in content:
+            log(item_id, True, "TouristTrip schema already present, skipped")
+            return
+        page_url = body.get("link", f"{SITE}/abu-dhabi-desert-safari-tours/")
+        schema = {
+            "@context": "https://schema.org",
+            "@type": "TouristTrip",
+            "name": "Abu Dhabi Desert Safari Tours",
+            "description": "Abu Dhabi desert safari tours from AED 35: evening, morning, sunrise, night, overnight, VIP, self-drive and shared-bus options with dune bashing, camel rides, sandboarding and BBQ dinner at the Al Khatim desert camp.",
+            "provider": {"@type": "Organization", "name": "Royal Arabian Safari", "url": SITE + "/"},
+            "offers": {
+                "@type": "AggregateOffer",
+                "priceCurrency": "AED",
+                "lowPrice": "35",
+                "highPrice": "800",
+                "offerCount": "11",
+                "availability": "https://schema.org/InStock",
+                "url": page_url,
+            },
+        }
+        script_tag = f'\n<script type="application/ld+json">{json.dumps(schema)}</script>\n'
+        new_content = content + script_tag
+        put_r = session.post(f"{SITE}/wp-json/wp/v2/pages/{page_id}",
+                              json={"content": new_content}, timeout=30)
+        if put_r.status_code == 200:
+            log(item_id, True, f"TouristTrip schema appended to page {page_id}")
+        else:
+            log(item_id, False, f"page {page_id} schema append -> {put_r.status_code}: {put_r.text[:300]}")
+    except Exception as exc:
+        log(item_id, False, f"Request error on page {page_id}: {exc}")
+
+
 def main():
     verify_auth()
 
@@ -197,6 +313,17 @@ def main():
 
     # --- Diagnostics only, no writes: check for anything tied to the 403 ---
     rankmath_diagnostic_redirections()
+
+    # --- P0-adjacent: sitewide stale staging-domain replacement ---
+    # Found affecting the homepage, /abu-dhabi-desert-safari-tours/ and
+    # /abu-dhabi-desert-safari-prices/ at ~90 occurrences each (media URLs,
+    # some inline links, and the homepage's own schema markup). Pure
+    # hostname string substitution, scanned and fixed across every page
+    # and post on the site, not just the 3 confirmed so far.
+    fix_stale_domain_sitewide()
+
+    # --- P2: missing commercial schema on the main money page ---
+    add_tourist_trip_schema("missing-commercial-schema", 13997)
 
     print("\n\n===== SUMMARY =====")
     ok = sum(1 for r in results if r["ok"])
