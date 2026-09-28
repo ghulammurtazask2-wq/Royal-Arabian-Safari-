@@ -121,6 +121,15 @@
       "likely_cause": "Not confirmed without server/plugin-admin access. Isolated to this one URL out of 190+ successfully fetched this session, so a domain-wide block is ruled out. Most likely a security plugin / WAF rule matching something specific to this URL or its recently-edited content, or a broken rewrite/redirect rule introduced by the same edit that updated it yesterday.",
       "recommended_fix": "Check the site's security plugin / firewall logs (or hosting-level WAF, e.g. via LiteSpeed or a security plugin like Wordfence if installed) for a rule blocking this specific URL, and check for a broken redirect/rewrite rule tied to this slug. This is a live outage on a real, finished page -- higher urgency than the sitemap-gap or price-mismatch findings since visitors and Googlebot cannot reach the page at all right now.",
       "requires": "WordPress/hosting admin access to check firewall and redirect configuration."
+    },
+    {
+      "id": "typo-stargazing-meta",
+      "priority": "P4",
+      "title": "Stray leading character in a meta description",
+      "url": "https://www.arabiansafariroyal.com/stargazing-desert-safari-abu-dhabi/",
+      "evidence": "Meta description reads 'aSee the Milky Way from Abu Dhabi's darkest deserts...' -- a stray 'a' before 'See'. Cosmetic only.",
+      "recommended_fix": "Delete the stray character. Two-second fix.",
+      "requires": "WordPress edit access."
     }
   ]
 }

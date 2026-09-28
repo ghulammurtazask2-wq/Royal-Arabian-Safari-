@@ -5,7 +5,7 @@
   "total_wp_published": 244,
   "total_in_sitemap": 206,
   "total_orphaned_from_sitemap": 38,
-  "sampled_count": 235,
+  "sampled_count": 244,
   "pages": [
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-dubai/",
@@ -3195,12 +3195,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T15:07:27",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r25",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct Eid-celebration angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/last-minute-desert-safari-abu-dhabi/",
@@ -3210,12 +3210,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T15:04:40",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r25",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (USD 14). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/anniversary-desert-safari-abu-dhabi/",
@@ -3225,12 +3225,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T15:02:12",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r25",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct anniversary-celebration angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-for-seniors/",
@@ -3255,12 +3255,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T12:25:19",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r25",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct activities/upgrades hub. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/things-to-do-in-abu-dhabi-desert/",
@@ -3300,12 +3300,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-24T09:42:21",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r25",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct NYE-specific angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/stargazing-desert-safari-abu-dhabi/",
@@ -3315,12 +3315,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T13:48:31",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r25",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "MINOR TYPO: meta description starts with a stray letter, 'aSee the Milky Way...' instead of 'See the Milky Way...'. Cosmetic only (P4). Note: this is a separate page from the BROKEN /stargazing-abu-dhabi-desert/ (see technical_issues.json live-403-stargazing-page) -- this commercial-booking-focused page works fine; the other is a general desert-stargazing guide that's currently 403ing. Worth a quick check once the 403 is fixed that these two don't cannibalize each other."
     },
     {
       "url": "https://www.arabiansafariroyal.com/falconry-abu-dhabi/",
@@ -3360,12 +3360,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T13:41:24",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r25",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 100/599). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-by-bus/",
@@ -3375,12 +3375,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T13:38:57",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r25",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 50), cites specific mall pickup points. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/self-drive-desert-safari-abu-dhabi/",
@@ -3525,12 +3525,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T13:27:34",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r25",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct comprehensive safety-guide angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/terms-conditions/",
