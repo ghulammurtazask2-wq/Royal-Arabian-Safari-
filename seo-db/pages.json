@@ -5,7 +5,7 @@
   "total_wp_published": 244,
   "total_in_sitemap": 206,
   "total_orphaned_from_sitemap": 38,
-  "sampled_count": 75,
+  "sampled_count": 85,
   "pages": [
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-dubai/",
@@ -2115,12 +2115,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T17:29:33",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r7",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct couples/private-dinner angle. No price stated in title/meta -- no conflict possible."
     },
     {
       "url": "https://www.arabiansafariroyal.com/corporate-desert-safari-abu-dhabi/",
@@ -2250,12 +2250,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T17:17:56",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r7",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct veg/vegan/Jain food angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/solo-female-desert-safari-abu-dhabi/",
@@ -2265,12 +2265,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T17:16:04",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r7",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct safety-focused angle for solo female travellers. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/short-desert-safari-abu-dhabi/",
@@ -2280,12 +2280,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T17:14:20",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r7",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct 2-3hr compressed-format angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-without-dune-bashing/",
@@ -2295,12 +2295,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T17:12:47",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r7",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct no-dune-bashing alternative angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-with-baby/",
@@ -2310,12 +2310,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T17:10:38",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r7",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct baby/toddler logistics angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-wheelchair/",
@@ -2325,12 +2325,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T17:08:35",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r7",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct accessibility angle -- genuinely rare/valuable inclusion for a tour operator site. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-video/",
@@ -2340,12 +2340,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T17:06:54",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r7",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct videography/photography-tips angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-statistics-facts/",
@@ -2355,12 +2355,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T17:03:57",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r7",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct data/stats-reference angle (42 data points). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-sensory-friendly/",
@@ -2370,12 +2370,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T16:59:28",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r7",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct autism/ADHD sensory-accessibility angle -- another genuinely rare/valuable inclusion. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-prayer-times/",
