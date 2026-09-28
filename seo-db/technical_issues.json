@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-09-28-round2",
+  "method": "Pulled directly from the public WordPress REST API (wp-json/wp/v2/pages, /posts, /media) at https://www.arabiansafariroyal.com/ -- no login required for these reads. Confirms plugin stack: RankMath SEO (with Redirections + Analytics modules), LiteSpeed Cache, Kadence theme/blocks, Contact Form 7. Application Passwords auth is enabled on this site (wp-json 'authentication' field), meaning write access is technically obtainable by generating one -- see seo-reports for details.",
+  "issues": [
+    {
+      "id": "sitemap-gap-37-pages",
+      "priority": "P0",
+      "title": "37 live, indexable WordPress pages are missing from the XML sitemap",
+      "evidence": "WP REST API lists 244 published pages+posts. The sitemap (sitemap_index.xml -> page-sitemap.xml + post-sitemap.xml) lists only 206 (later reconciled to 207 after excluding one legitimate redirect). Diffing the two gives 37 URLs that exist and are live on WordPress but are absent from the sitemap Google/Bing actually crawl from. Spot-checked 6 of the 37 directly: 5 are confirmed live, robots='index, follow', fully built pages with 30-50 minute reading time and complete Open Graph/Twitter/geo meta (dubai-city-tour, abu-dhabi-city-tour, evening-desert-safari-abu-dhabi, sheikh-zayed-grand-mosque-tour, things-to-do-in-dubai). 1 of the 6 (desert-safari-dubai-price) is a legitimate 301 redirect to dubai-desert-safari-price and is correctly excluded -- not a bug.",
+      "affected_urls_sample": [
+        "https://www.arabiansafariroyal.com/dubai-city-tour/",
+        "https://www.arabiansafariroyal.com/abu-dhabi-city-tour/",
+        "https://www.arabiansafariroyal.com/evening-desert-safari-abu-dhabi/",
+        "https://www.arabiansafariroyal.com/sheikh-zayed-grand-mosque-tour/",
+        "https://www.arabiansafariroyal.com/things-to-do-in-dubai/",
+        "https://www.arabiansafariroyal.com/full-day-dubai-city-tour/",
+        "https://www.arabiansafariroyal.com/al-ain-city-tour/",
+        "https://www.arabiansafariroyal.com/warner-bros-world-abu-dhabi/",
+        "https://www.arabiansafariroyal.com/ferrari-world-abu-dhabi/",
+        "https://www.arabiansafariroyal.com/louvre-abu-dhabi/",
+        "https://www.arabiansafariroyal.com/qasr-al-watan/",
+        "https://www.arabiansafariroyal.com/... (see seo-db/pages.json orphan list for all 37)"
+      ],
+      "affected_cluster": "This is almost entirely the site's 'Dubai/Abu Dhabi city tour + attractions' cluster -- directly matching two named related topics from the brief ('Dubai City Tour', 'Abu Dhabi City Tour') that the round-1 audit incorrectly reported as having no owning page. The pages exist; they are simply undiscoverable via sitemap.",
+      "likely_cause": "Not confirmed without server/plugin-admin access, but the pattern strongly points to a stale cached sitemap: most orphaned pages were last modified between 2026-08-23 and 2026-09-27 (many within the last few days), i.e. this looks like a recently-built content cluster the sitemap generator has not caught up with. The site runs LiteSpeed Cache, which commonly caches XML sitemap output; RankMath (confirmed installed) normally auto-updates its sitemap on publish, so a caching layer serving a stale sitemap.xml is the most likely explanation over a RankMath misconfiguration.",
+      "recommended_fix": "1) Purge LiteSpeed Cache (specifically the cached sitemap XML files), or exclude sitemap*.xml from full-page cache. 2) In RankMath > Sitemap Settings, manually trigger a re-save/regeneration. 3) Re-fetch sitemap_index.xml afterward and confirm the count reaches 244 (minus legitimate redirects/noindex pages). This is a config/cache action, not a content edit -- low risk, high value, and does not require touching any page content.",
+      "requires": "WordPress admin access (or a plugin-level trigger) -- cannot be done via the public read-only REST API this session has."
+    },
+    {
+      "id": "price-mismatch-evening-safari",
+      "priority": "P1",
+      "title": "Price shown in the page title/meta does not match the price shown in the H1 on the same page",
+      "url": "https://www.arabiansafariroyal.com/evening-desert-safari-abu-dhabi/",
+      "evidence": "Title tag: 'Evening Desert Safari Abu Dhabi, From AED 50 With Dinner'. Meta description: 'From AED 50 per person'. But the on-page H1 reads: 'Evening Desert Safari Abu Dhabi From AED 35 per person'. Two different headline prices (AED 50 vs AED 35) on the same page.",
+      "recommended_fix": "Confirm the correct current price with the business and make the title, meta description, and H1 agree. This is a direct trust/conversion issue for a page users land on from search expecting one number and seeing another.",
+      "requires": "WordPress edit access to fix directly, or the business can correct it themselves -- flagged here rather than guessed at, since the actual current price is a business fact this system should not invent."
+    },
+    {
+      "id": "duplicate-content-blocks-RETRACTED",
+      "priority": "info",
+      "title": "RETRACTED: earlier 'duplicate content blocks' finding on the two mega commercial pages did not hold up under verification",
+      "evidence": "The seed audit (2026-09-28-seed-audit.md) flagged /abu-dhabi-desert-safari-tours/ and /abu-dhabi-desert-safari-prices/ as having apparent duplicate section headings, based on TinyFish's rendered-HTML extraction showing phrases like 'Book this tour' and the FAQ heading appearing twice. Pulling the actual stored content directly from wp/v2/pages/{id} and checking it programmatically shows this was a false positive: both pages have zero duplicate H2 headings (47 unique of 47 on /tours/, 42 unique of 42 on /prices/), and every flagged phrase ('Book this tour', 'If we have to cancel, what happens?', the FAQ heading, the packages heading) occurs exactly once in the source content. The earlier read was most likely an artifact of a template/widget element (e.g. a responsive mobile/desktop CTA button, or a sticky element) being rendered twice in the live DOM but stored once in the database.",
+      "action": "No content-structure fix is needed on these two pages based on this evidence. Superseded item #2 from the P1 queue in the seed audit is closed with no action."
+    },
+    {
+      "id": "media-alt-text-gap",
+      "priority": "P2",
+      "title": "Meaningful share of images sampled have no alt text",
+      "evidence": "10 of 50 sampled media library items (20%) have an empty alt_text field, including customer-review screenshots and award/certification images (e.g. TripAdvisor Traveller's Choice, World Travel Award images) -- exactly the kind of trust-building images worth having descriptive alt text on for both accessibility and image search.",
+      "recommended_fix": "Once write access exists, backfill alt text for the review/award images first (highest trust value), then do a full pass across the media library (this was a 50-item sample out of ~244 pages' worth of images, not exhaustive).",
+      "requires": "WordPress edit access."
+    }
+  ]
+}
