@@ -5,7 +5,7 @@
   "total_wp_published": 244,
   "total_in_sitemap": 206,
   "total_orphaned_from_sitemap": 38,
-  "sampled_count": 121,
+  "sampled_count": 131,
   "pages": [
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-dubai/",
@@ -135,12 +135,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-23T09:54:15",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r12",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct honest-arithmetic angle (2 usable hours out of 6). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-airport-terminal-transfer/",
@@ -180,12 +180,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-24T06:48:44",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r12",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct visa-rules informational angle, no price claim to conflict. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/best-desert-safari-dubai/",
@@ -420,12 +420,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-23T09:54:13",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r12",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct hour-by-hour guide angle, has byline author. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-airport-luggage-storage/",
@@ -450,12 +450,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-23T09:53:52",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r12",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent ($190/AED 699 -- USD-led here vs AED-led elsewhere, minor inconsistency in primary currency choice across pages but not a factual conflict). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/car-with-driver-dubai/",
@@ -480,12 +480,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-25T23:07:43",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r12",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 699). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-airport-transfer/",
@@ -510,12 +510,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-25T23:07:26",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r12",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct airline-specific (Dubai Connect) angle, price consistent (AED 699). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-airport-taxi/",
@@ -585,12 +585,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-23T10:34:24",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r12",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct airline-specific (Etihad free stopover) angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-tours/",
@@ -3450,12 +3450,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-24T09:09:55",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r12",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 35, included). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/camel-riding-abu-dhabi/",
@@ -3465,12 +3465,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T12:28:31",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r12",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (included free). Distinct welfare/ride-length transparency angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-abu-dhabi/",
@@ -3495,12 +3495,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T12:31:25",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r12",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 50). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/hummer-desert-safari-abu-dhabi/",
