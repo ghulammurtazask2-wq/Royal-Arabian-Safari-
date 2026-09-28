@@ -341,17 +341,29 @@ def main():
     # --- P2: missing commercial schema on the main money page ---
     add_tourist_trip_schema("missing-commercial-schema", 13997)
 
-    # --- Best-effort cache purge attempt before verifying. LiteSpeed Cache
-    # is confirmed installed; WP core's save_post hooks (which REST edits
-    # do fire) normally trigger its auto-purge, but that may not cover a
-    # separate edge/CDN cache if one exists in front of it. This is a
-    # guess at LiteSpeed's REST purge-all route -- logged fully either way,
-    # never assumed to have worked. ---
+    # --- DIAGNOSTIC: the previous run showed live GETs with cache headers
+    # reporting MISS (i.e. genuinely fresh from WordPress, not a cache)
+    # that still had pre-fix title/description/robots -- ruling out simple
+    # page caching as the explanation for at least some items. Check
+    # whether RankMath's fields are actually exposed on the standard core
+    # `meta` object under context=edit (they were checked once under the
+    # default view context early in this session and weren't there, but
+    # that was before context=edit was known to matter for anything). If
+    # they are, writing them via the standard wp/v2 POST -- guaranteed
+    # stable -- may be more reliable than the custom RankMath route. ---
     try:
-        r = session.post(f"{SITE}/wp-json/litespeed/v1/purge", json={"type": "all"}, timeout=30)
-        log("cache-purge-attempt", r.status_code == 200, f"litespeed purge -> {r.status_code}: {r.text[:300]}")
+        diag_r = session.get(f"{SITE}/wp-json/wp/v2/pages/9971",
+                              params={"context": "edit"}, timeout=30)
+        if diag_r.status_code == 200:
+            meta = diag_r.json().get("meta", {})
+            rankmath_keys = {k: v for k, v in meta.items() if "rank_math" in k.lower() or "robots" in k.lower()}
+            log("diag-rankmath-meta-fields", True,
+                f"page 9971 meta keys containing rank_math/robots: {rankmath_keys if rankmath_keys else '(none found)'}; "
+                f"all meta keys: {list(meta.keys())}")
+        else:
+            log("diag-rankmath-meta-fields", False, f"GET page 9971 context=edit -> {diag_r.status_code}: {diag_r.text[:300]}")
     except Exception as exc:
-        log("cache-purge-attempt", False, f"Request error: {exc}")
+        log("diag-rankmath-meta-fields", False, f"Request error: {exc}")
 
     # --- VERIFY: check the actual public pages reflect the writes above,
     # instead of trusting the write endpoints' 200 responses. A previous
@@ -370,7 +382,7 @@ def main():
     verify_live("verify-stale-domain-homepage", f"{SITE}/", "x", unexpect_substring=STALE_DOMAIN)
     verify_live("verify-stale-domain-tours", f"{SITE}/abu-dhabi-desert-safari-tours/", "x",
                 unexpect_substring=STALE_DOMAIN)
-    verify_live("verify-schema-tours", f"{SITE}/abu-dhabi-desert-safari-tours/", '"@type":"TouristTrip"')
+    verify_live("verify-schema-tours", f"{SITE}/abu-dhabi-desert-safari-tours/", '"@type": "TouristTrip"')
 
     print("\n\n===== SUMMARY =====")
     ok = sum(1 for r in results if r["ok"])
