@@ -66,6 +66,15 @@
       "evidence": "A single live web search for 'abu dhabi desert safari' (AE-localized, 2026-09-28) returned abudhabideserttour.com, TripAdvisor, Etihad.com, GetYourGuide, visitabudhabi.ae, Facebook, eatours.ae, abudhabi-desert-safari.com, and abudhabiadventuresafari.com in the top 9 results. arabiansafariroyal.com did not appear. This is directional (one snapshot, no rank-tracking tool, no device/personalization control), not a confirmed ranking position, but it is a real current data point.",
       "recommended_fix": "Not a one-step fix. Once GSC access exists, confirm actual ranking position and trend for this term. The competitive set splits into high-authority generalist/OTA sites (compete via backlinks/authority, see link-profile gap) and several smaller dedicated operators (compete via content depth and schema, where this site is already strong). Concentrating internal-link signal on a single confirmed head-term page (see keyword_url_map.json) is a lower-effort lever than trying to out-authority TripAdvisor/GetYourGuide directly.",
       "requires": "GSC access to confirm actual position; a backlink data source to plan authority-building."
+    },
+    {
+      "id": "reading-time-metadata-bug",
+      "priority": "P3",
+      "title": "Reading-time meta shows '2 minutes' on an 11,209-word page",
+      "url": "https://www.arabiansafariroyal.com/overnight-desert-safari-abu-dhabi/",
+      "evidence": "Twitter card meta (data1 under label 'Time to read') shows '2 minutes'. Verified actual stored WP content is 11,209 words -- one of the longest pages on the site, consistent with its ~45-50 minute siblings (private/vip/hummer/liwa/camp-only/half-day desert safari pages all show 26-46 minutes for similarly-sized content). This is a metadata calculation bug, not thin content -- the page itself is fine.",
+      "recommended_fix": "Whatever plugin/field computes the displayed reading time for this page needs to be recalculated/resaved. Low impact (doesn't affect rankings directly) but shows wrong information on social share cards.",
+      "requires": "WordPress edit access (likely just re-saving the page to trigger recalculation)."
     }
   ]
 }

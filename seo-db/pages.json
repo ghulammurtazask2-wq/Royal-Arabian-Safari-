@@ -5,7 +5,7 @@
   "total_wp_published": 244,
   "total_in_sitemap": 206,
   "total_orphaned_from_sitemap": 38,
-  "sampled_count": 55,
+  "sampled_count": 65,
   "pages": [
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-dubai/",
@@ -2130,12 +2130,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T12:14:00",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r5",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 35pp / AED 599 per car stated same in title and meta). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/liwa-desert-safari-abu-dhabi/",
@@ -2145,12 +2145,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T12:15:24",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r5",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "No price stated in title/meta (page focuses on drive-time honesty angle). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/private-desert-safari-abu-dhabi/",
@@ -2160,12 +2160,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T11:54:26",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r5",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (title/meta USD 163/AED 599, H1 has no price to conflict). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/family-desert-safari-abu-dhabi/",
@@ -2175,12 +2175,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T17:26:10",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r5",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (USD 14/AED 50 in both title and meta). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/overnight-desert-safari-abu-dhabi/",
@@ -2190,12 +2190,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T12:17:39",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r5",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "BUG FOUND: Twitter card meta shows 'Time to read: 2 minutes' but actual stored content is 11,209 words (one of the longest pages on the site, ~45min read). Reading-time metadata is wrong/stale -- see technical_issues.json reading-time-metadata-bug. Content itself is fine."
     },
     {
       "url": "https://www.arabiansafariroyal.com/bedouin-camp-abu-dhabi/",
@@ -2535,12 +2535,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T12:22:36",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r5",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "No price stated in title/meta. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-360-virtual-tour/",
@@ -3285,12 +3285,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T12:26:42",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r5",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "No price stated in title/meta. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/new-years-eve-desert-safari-abu-dhabi/",
@@ -3390,12 +3390,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T13:36:43",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r5",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 35/person in both title and meta). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-reviews/",
@@ -3480,12 +3480,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T12:30:01",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r5",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (title/meta USD 245/AED 899, H1 has no price to conflict). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dune-bashing-abu-dhabi/",
@@ -3510,12 +3510,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T12:33:04",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r5",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "No price stated in title/meta (deliberately -- page explains per-vehicle pricing varies). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/is-desert-safari-abu-dhabi-safe-complete-safety-guide/",
