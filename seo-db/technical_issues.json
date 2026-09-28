@@ -1,6 +1,7 @@
 {
   "generated_at": "2026-09-28-round2",
   "method": "Pulled directly from the public WordPress REST API (wp-json/wp/v2/pages, /posts, /media) at https://www.arabiansafariroyal.com/ -- no login required for these reads. Confirms plugin stack: RankMath SEO (with Redirections + Analytics modules), LiteSpeed Cache, Kadence theme/blocks, Contact Form 7. Application Passwords auth is enabled on this site (wp-json 'authentication' field), meaning write access is technically obtainable by generating one -- see seo-reports for details.",
+  "fix_pipeline": "A GitHub Actions workflow (.github/workflows/apply-seo-fixes.yml) + script (scripts/apply_wp_fixes.py) now exist to apply the fixes below directly via the WordPress REST API, authenticated over Actions runners (normal internet access, unlike this session's sandboxed network). It requires WP_USERNAME and WP_APP_PASSWORD as GitHub repo secrets, not yet added as of this write. It is workflow_dispatch-only -- nothing runs until manually triggered after the secrets exist. See seo-reports/2026-09-28-fix-pipeline.md.",
   "issues": [
     {
       "id": "sitemap-gap-37-pages",
@@ -35,7 +36,8 @@
       "evidence": "Title tag: 'Evening Desert Safari Abu Dhabi, From AED 50 With Dinner'. Meta description: 'From AED 50 per person'. But the on-page H1 reads: 'Evening Desert Safari Abu Dhabi From AED 35 per person'. Two different headline prices (AED 50 vs AED 35) on the same page.",
       "second_occurrence": "https://www.arabiansafariroyal.com/dubai-desert-safari-price/ -- title/OG/Twitter meta all say 'Dubai Desert Safari Price From USD 14', but the on-page H1 reads 'Dubai Desert Safari Price From AED 35'. USD 14 is roughly AED 51 at the AED/USD peg, not AED 35 -- same title-vs-H1 conflict pattern as the evening-safari page, on an unrelated page. Two independent confirmations now suggest this may be a systemic issue (e.g. an SEO-title field not being updated when the on-page price copy changes) rather than two isolated typos.",
       "recommended_fix": "Confirm the correct current prices with the business and make title/meta/H1 agree on both pages. Given two independent occurrences, worth spot-checking a broader sample of money pages for the same title-vs-H1 price drift, and checking whether the SEO title field and the page content are being updated together when prices change.",
-      "requires": "WordPress edit access to fix directly, or the business can correct it themselves -- flagged here rather than guessed at, since the actual current price is a business fact this system should not invent."
+      "requires": "WordPress edit access to fix directly, or the business can correct it themselves -- flagged here rather than guessed at, since the actual current price is a business fact this system should not invent.",
+      "status": "CONFIRMED BY SITE OWNER 2026-09-28: AED 35 is correct on both pages (the H1 on each page was already right; the title/meta was wrong). Fix is queued in scripts/apply_wp_fixes.py, pending WP_USERNAME/WP_APP_PASSWORD GitHub secrets to run."
     },
     {
       "id": "duplicate-content-blocks-RETRACTED",
@@ -92,7 +94,8 @@
       "url": "https://www.arabiansafariroyal.com/self-drive-desert-safari-dubai/",
       "evidence": "This page has a complete, well-formed title ('Self Drive Desert Safari Dubai — AED 35, Drive to Our Camp'), meta description, and OG/Twitter image -- indistinguishable from any other finished page by its head metadata. But both the live rendered page and the raw WP REST API content (confirmed identical, so this is not a rendering bug) show the actual body is a single ~50-word paragraph: 'Not sure this is your page? This page is the AED 35 self-drive safari...see the full Desert Safari Dubai page.' Reading time shows 'Less than a minute', versus 14-64 minutes on every other sampled page. robots meta is 'index, follow' -- this thin stub is fully indexable. Notably, the equivalent Abu Dhabi page (/self-drive-desert-safari-abu-dhabi/, sampled earlier) is a full, complete page -- this appears to be specific to the Dubai variant, not a template-wide issue.",
       "recommended_fix": "Either build this page out to match the depth of its Abu Dhabi counterpart, or -- if it's intentionally meant to be a short disambiguation/redirect note pointing to the main Dubai desert safari page -- set it to noindex and/or add a canonical to the page it points readers to, rather than leaving a ~50-word page fully indexable under a fully-formed commercial title. As written it risks looking like thin/doorway content to Google despite the rest of the site's strong content depth.",
-      "requires": "WordPress edit access. A business decision on which fix (build out vs noindex+canonical) is appropriate."
+      "requires": "WordPress edit access. A business decision on which fix (build out vs noindex+canonical) is appropriate.",
+      "status": "DECISION MADE BY SITE OWNER 2026-09-28: noindex + canonical to /dubai-desert-safari/ (not a full content buildout). Fix is queued in scripts/apply_wp_fixes.py, pending WP_USERNAME/WP_APP_PASSWORD GitHub secrets to run."
     },
     {
       "id": "duplicated-package-block-british-russian",

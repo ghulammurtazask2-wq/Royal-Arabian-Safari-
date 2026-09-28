@@ -1,0 +1,37 @@
+name: Apply WordPress SEO Fixes
+
+# Manual trigger only. Never runs automatically, never runs on a schedule.
+# Requires WP_USERNAME and WP_APP_PASSWORD repository secrets (Settings ->
+# Secrets and variables -> Actions) before it can do anything -- the job
+# fails fast at the auth-verify step if they're missing or wrong.
+on:
+  workflow_dispatch:
+
+jobs:
+  apply-fixes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Apply fixes
+        env:
+          WP_USERNAME: ${{ secrets.WP_USERNAME }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: python scripts/apply_wp_fixes.py
+
+      - name: Upload result log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fix-run-results
+          path: fix_run_results.json
+          if-no-files-found: ignore
