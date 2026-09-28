@@ -21,6 +21,7 @@ jobs:
         run: |
           pip install google-api-python-client google-auth google-auth-httplib2 google-auth-oauthlib
           pip install google-generativeai gspread oauth2client requests
+          pip install google-analytics-data
 
       - name: Run daily report
         env:
