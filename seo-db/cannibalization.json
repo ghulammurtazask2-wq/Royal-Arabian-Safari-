@@ -13,10 +13,10 @@
         "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-what-to-expect/",
         "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-reviews/"
       ],
-      "evidence": "On-page sampling of the homepage, /abu-dhabi-desert-safari-tours/ and /abu-dhabi-desert-safari-prices/ shows heavy topical overlap: all three cover packages, pricing, FAQs and booking/cancellation content. /abu-dhabi-desert-safari-tours/ and /abu-dhabi-desert-safari-prices/ each run to 90-100+ H2 sections and both contain near-identical section titles ('Book this tour', 'If we have to cancel, what happens?', 'Planning the Rest of Your Abu Dhabi Trip', full pricing breakdowns) -- suggesting genuine overlap rather than clean intent separation.",
-      "risk_level": "high",
+      "evidence": "UPDATED after sampling all 5 non-homepage URLs via raw WP content (not just tours/prices): each page has a genuinely distinct angle, not template duplication. /abu-dhabi-desert-safari-tours/ = overall booking hub (packages, group bookings, full-day itineraries). /abu-dhabi-desert-safari-prices/ = cost breakdown and price-transparency audit. /abu-dhabi-desert-safari-tickets/ (17,171 words, 42 H2s) = ticket-buying and third-party-reseller-scam angle, and explicitly self-routes readers with its own H2 'Tickets, Prices or Deals -- Which Page Do You Need?'. /abu-dhabi-desert-safari-reviews/ = social-proof/trust angle. /abu-dhabi-desert-safari-what-to-expect/ = first-timer experience walkthrough. The earlier 'near-identical section titles' read (Book this tour / cancellation FAQ) was the same rendering artifact already retracted in technical_issues.json -- those are shared template/CTA elements, not duplicated substantive content. This looks like deliberate content-silo architecture, not accidental overlap.",
+      "risk_level": "medium (downgraded from high)",
       "recommended_action": "VERIFY",
-      "action_detail": "Pull GSC page-level and query-level data for these 6 URLs. If two pages are both getting impressions for the same queries with neither in a stable top position, that is the trigger to differentiate (trim overlapping sections, tighten each page to its distinct intent) rather than merge -- these pages have real commercial value individually (price calculator, tour finder, group booking) and should not be deleted or redirected without that evidence.",
+      "action_detail": "The open question is no longer 'are these duplicates' (evidence says no) but 'which one Google actually shows for the bare head term abu dhabi desert safari, and does internal linking correctly signal that.' Still needs GSC query-level data to answer. No content should be trimmed or merged based on current evidence -- each page earns its place on angle alone.",
       "requires_approval_for": ["any MERGE", "any REDIRECT", "any large content removal"]
     },
     {
@@ -28,10 +28,10 @@
         "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-refund-complaint-process/",
         "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-payment-methods-cash-card/"
       ],
-      "evidence": "4 distinct policy-question pages exist; not yet sampled for content overlap.",
-      "risk_level": "medium",
-      "recommended_action": "SAMPLE_THEN_VERIFY",
-      "action_detail": "Not yet crawled in this pass. Sample on-page content and cross-reference GSC queries before any decision."
+      "evidence": "All 4 sampled via raw WP content: cancellation-policy (6,179 words), pay-on-arrival (6,666 words), refund-complaint-process (6,341 words), payment-methods-cash-card (6,309 words). Each has a clearly distinct angle -- the policy terms themselves, pre-payment psychology/trust, complaint escalation process, and cash-vs-card logistics respectively. No meaningful topical overlap found.",
+      "risk_level": "low",
+      "recommended_action": "NO_ACTION_KEEP",
+      "action_detail": "Good differentiation observed, consistent with the seasonal-month and nationality clusters. No action needed."
     },
     {
       "cluster_id": "safety-trust-cluster",

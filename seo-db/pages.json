@@ -5,7 +5,7 @@
   "total_wp_published": 244,
   "total_in_sitemap": 206,
   "total_orphaned_from_sitemap": 38,
-  "sampled_count": 48,
+  "sampled_count": 55,
   "pages": [
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-dubai/",
@@ -2745,12 +2745,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T16:23:05",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r4",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Booking-policy cluster: 6,341 words, distinct complaint-escalation angle. Low cannibalization risk -- see cannibalization.json booking-policy-cluster."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-payment-methods-cash-card/",
@@ -2760,12 +2760,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T16:20:12",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r4",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Booking-policy cluster: 6,309 words, distinct cash-vs-card logistics angle. Low cannibalization risk."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-first-time-guide/",
@@ -2835,12 +2835,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T16:06:35",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r4",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Booking-policy cluster: 6,179 words, distinct policy-terms angle. Low cannibalization risk."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-pay-on-arrival/",
@@ -2850,12 +2850,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T16:03:56",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r4",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Booking-policy cluster: 6,666 words, distinct pre-payment trust/psychology angle. Low cannibalization risk."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-scams-how-to-avoid/",
@@ -3105,12 +3105,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T12:23:53",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r4",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Core-pillar cluster: 17,171 words, 42 H2s -- another mega page, but with a clearly distinct ticket-buying/reseller-scam-avoidance angle, and explicitly self-routes readers ('Tickets, Prices or Deals -- Which Page Do You Need?'). Cannibalization risk downgraded to medium -- see cannibalization.json core-pillar-cluster."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-50-aed/",
@@ -3405,12 +3405,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T13:34:32",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r4",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Core-pillar cluster: 6,881 words, distinct social-proof/trust angle. Cannibalization risk downgraded to medium."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-what-to-expect/",
@@ -3420,12 +3420,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T13:32:15",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r4",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Core-pillar cluster: 6,875 words, distinct first-timer-experience angle. Cannibalization risk downgraded to medium."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-desert-safari-prices/",
