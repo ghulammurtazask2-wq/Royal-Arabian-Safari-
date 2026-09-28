@@ -5,7 +5,7 @@
   "total_wp_published": 244,
   "total_in_sitemap": 206,
   "total_orphaned_from_sitemap": 38,
-  "sampled_count": 215,
+  "sampled_count": 225,
   "pages": [
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-dubai/",
@@ -2640,12 +2640,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T16:35:37",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r23",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct facilities-transparency angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-phone-signal/",
@@ -2655,12 +2655,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:33:46",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r23",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct zone-by-zone signal mapping angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-vehicles/",
@@ -2670,12 +2670,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:33:50",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r23",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct vehicle-spec angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-sandstorm-safety/",
@@ -2685,12 +2685,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T16:33:49",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r23",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct honest-risk angle with 4-level dust spectrum. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-rain-policy/",
@@ -2700,12 +2700,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T16:32:18",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r23",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct rain-policy angle with real stat (~12 rainy days/year). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/xtreme-abu-dhabi-desert-safari-vs-arabian-safari-royal/",
@@ -2715,12 +2715,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T16:30:40",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r23",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Direct named-competitor comparison page, consistent with site's competitor-transparency voice. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-airport-pickup/",
@@ -2775,12 +2775,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T16:17:21",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r23",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct first-timer mistakes/packing angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-tipping-guide/",
@@ -2790,12 +2790,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T16:14:43",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r23",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct tipping-culture angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-how-many-people-per-car/",
@@ -2805,12 +2805,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T16:11:58",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r23",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct capacity/seating angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-safe-for-ladies/",
@@ -2820,12 +2820,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T16:09:20",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r23",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct solo-women-safety angle. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-cancellation-policy/",
