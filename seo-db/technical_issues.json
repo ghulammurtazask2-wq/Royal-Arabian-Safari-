@@ -49,6 +49,22 @@
       "evidence": "10 of 50 sampled media library items (20%) have an empty alt_text field, including customer-review screenshots and award/certification images (e.g. TripAdvisor Traveller's Choice, World Travel Award images) -- exactly the kind of trust-building images worth having descriptive alt text on for both accessibility and image search.",
       "recommended_fix": "Once write access exists, backfill alt text for the review/award images first (highest trust value), then do a full pass across the media library (this was a 50-item sample out of ~244 pages' worth of images, not exhaustive).",
       "requires": "WordPress edit access."
+    },
+    {
+      "id": "missing-commercial-schema",
+      "priority": "P2",
+      "title": "Money pages lack Offer/TouristTrip schema despite defined per-package pricing",
+      "evidence": "Checked JSON-LD in raw stored content via WP REST API. Homepage has WebPage + FAQPage + Product schema. /abu-dhabi-desert-safari-tours/ (the de-facto pillar/money page) has only WebPage + FAQPage -- no Offer/TouristTrip/Product schema, despite explicit per-package AED pricing on the page. Sitewide Organization/LocalBusiness schema (normally injected in the theme <head> by RankMath, not in post content) was NOT verified this pass -- the REST API only exposes post content, not the full rendered <head>.",
+      "recommended_fix": "Add Offer/TouristTrip (or Product) schema consistently across all money pages, starting with /abu-dhabi-desert-safari-tours/, /abu-dhabi-desert-safari-prices/, and /abu-dhabi-desert-safari-tickets/. Separately, verify (via a live rendered-HTML check, not the REST API) that sitewide Organization/LocalBusiness schema exists in the theme head.",
+      "requires": "WordPress edit access for the fix; a live browser/HTML fetch (not REST) to verify the head-level schema question."
+    },
+    {
+      "id": "no-serp-visibility-head-term",
+      "priority": "P1",
+      "title": "Site does not appear in a live top-9 SERP snapshot for the primary head term",
+      "evidence": "A single live web search for 'abu dhabi desert safari' (AE-localized, 2026-09-28) returned abudhabideserttour.com, TripAdvisor, Etihad.com, GetYourGuide, visitabudhabi.ae, Facebook, eatours.ae, abudhabi-desert-safari.com, and abudhabiadventuresafari.com in the top 9 results. arabiansafariroyal.com did not appear. This is directional (one snapshot, no rank-tracking tool, no device/personalization control), not a confirmed ranking position, but it is a real current data point.",
+      "recommended_fix": "Not a one-step fix. Once GSC access exists, confirm actual ranking position and trend for this term. The competitive set splits into high-authority generalist/OTA sites (compete via backlinks/authority, see link-profile gap) and several smaller dedicated operators (compete via content depth and schema, where this site is already strong). Concentrating internal-link signal on a single confirmed head-term page (see keyword_url_map.json) is a lower-effort lever than trying to out-authority TripAdvisor/GetYourGuide directly.",
+      "requires": "GSC access to confirm actual position; a backlink data source to plan authority-building."
     }
   ]
 }
