@@ -5,7 +5,7 @@
   "total_wp_published": 244,
   "total_in_sitemap": 206,
   "total_orphaned_from_sitemap": 38,
-  "sampled_count": 141,
+  "sampled_count": 151,
   "pages": [
     {
       "url": "https://www.arabiansafariroyal.com/vip-desert-safari-dubai/",
@@ -285,12 +285,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:21:01",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r14",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Cites official RTA starting fares. Strong E-E-A-T. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/corporate-desert-safari-dubai/",
@@ -405,12 +405,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-08-23T22:21:35",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r14",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 799). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-layover-guide/",
@@ -435,12 +435,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-25T23:09:00",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r14",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Cites official per-terminal prices. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-stopover-tour/",
@@ -465,12 +465,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-25T23:08:21",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r14",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 250/hr sedan, AED 350 Land Cruiser). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/dubai-airport-layover-tour/",
@@ -495,12 +495,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-25T23:07:38",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r14",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 799). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/emirates-dubai-stopover/",
@@ -525,12 +525,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-21T09:39:56",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r14",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Cites official AUH flagfall/per-km rates. Strong E-E-A-T. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-airport-luggage-storage/",
@@ -540,12 +540,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-21T09:34:17",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r14",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Cites official desk location and rates (Gate 7, AED 35/12h). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-airport-hotel/",
@@ -555,12 +555,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-21T09:13:08",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r14",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Distinct AUHotel-specific angle with operational details (boarding-pass rule). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/abu-dhabi-airport-lounges/",
@@ -570,12 +570,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-23T10:53:01",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r14",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Cites all 5 Terminal A lounges with specific access/pricing. No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/etihad-stopover-abu-dhabi/",
@@ -2730,12 +2730,12 @@
       "in_sitemap": true,
       "wp_modified": "2026-09-27T16:25:51",
       "wp_status": "publish",
-      "crawl_status": "not_yet_sampled",
+      "crawl_status": "sampled_2026-09-28-r14",
       "title": null,
       "meta_description": null,
       "canonical": null,
       "robots_meta": null,
-      "notes": null
+      "notes": "Price consistent (AED 899). No issue found."
     },
     {
       "url": "https://www.arabiansafariroyal.com/desert-safari-abu-dhabi-refund-complaint-process/",
