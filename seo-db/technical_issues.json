@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-09-28-round2",
   "method": "Pulled directly from the public WordPress REST API (wp-json/wp/v2/pages, /posts, /media) at https://www.arabiansafariroyal.com/ -- no login required for these reads. Confirms plugin stack: RankMath SEO (with Redirections + Analytics modules), LiteSpeed Cache, Kadence theme/blocks, Contact Form 7. Application Passwords auth is enabled on this site (wp-json 'authentication' field), meaning write access is technically obtainable by generating one -- see seo-reports for details.",
-  "fix_pipeline": "A GitHub Actions workflow (.github/workflows/apply-seo-fixes.yml) + script (scripts/apply_wp_fixes.py) now exist to apply the fixes below directly via the WordPress REST API, authenticated over Actions runners (normal internet access, unlike this session's sandboxed network). It requires WP_USERNAME and WP_APP_PASSWORD as GitHub repo secrets, not yet added as of this write. It is workflow_dispatch-only -- nothing runs until manually triggered after the secrets exist. See seo-reports/2026-09-28-fix-pipeline.md.",
+  "fix_pipeline": "A GitHub Actions workflow (.github/workflows/apply-seo-fixes.yml) + script (scripts/apply_wp_fixes.py) apply fixes directly via the WordPress REST API, authenticated over Actions runners. Repo secrets WP_USERNAME/WP_APP_PASSWORD were added 2026-09-28 and the pipeline has now run twice: run 1 (17/20 succeeded; 3 failed on a missing context=edit param needed for WordPress to return editable content), run 2 after the bugfix (70/70 succeeded, including the sitewide stale-domain scan which turned out to affect 51 pages and 3,797 occurrences, far more than first estimated). It remains workflow_dispatch-only. See seo-reports/2026-09-28-fix-pipeline.md and the individual issue 'status' fields below for what's actually been applied live.",
   "issues": [
     {
       "id": "sitemap-gap-37-pages",
@@ -37,7 +37,7 @@
       "second_occurrence": "https://www.arabiansafariroyal.com/dubai-desert-safari-price/ -- title/OG/Twitter meta all say 'Dubai Desert Safari Price From USD 14', but the on-page H1 reads 'Dubai Desert Safari Price From AED 35'. USD 14 is roughly AED 51 at the AED/USD peg, not AED 35 -- same title-vs-H1 conflict pattern as the evening-safari page, on an unrelated page. Two independent confirmations now suggest this may be a systemic issue (e.g. an SEO-title field not being updated when the on-page price copy changes) rather than two isolated typos.",
       "recommended_fix": "Confirm the correct current prices with the business and make title/meta/H1 agree on both pages. Given two independent occurrences, worth spot-checking a broader sample of money pages for the same title-vs-H1 price drift, and checking whether the SEO title field and the page content are being updated together when prices change.",
       "requires": "WordPress edit access to fix directly, or the business can correct it themselves -- flagged here rather than guessed at, since the actual current price is a business fact this system should not invent.",
-      "status": "CONFIRMED BY SITE OWNER 2026-09-28: AED 35 is correct on both pages (the H1 on each page was already right; the title/meta was wrong). Fix is queued in scripts/apply_wp_fixes.py, pending WP_USERNAME/WP_APP_PASSWORD GitHub secrets to run."
+      "status": "FIXED 2026-09-28: title/meta on both pages set to AED 35 via RankMath updateMeta, verified 200 response. Live."
     },
     {
       "id": "duplicate-content-blocks-RETRACTED",
@@ -52,7 +52,8 @@
       "title": "Meaningful share of images sampled have no alt text",
       "evidence": "10 of 50 sampled media library items (20%) have an empty alt_text field, including customer-review screenshots and award/certification images (e.g. TripAdvisor Traveller's Choice, World Travel Award images) -- exactly the kind of trust-building images worth having descriptive alt text on for both accessibility and image search.",
       "recommended_fix": "Once write access exists, backfill alt text for the review/award images first (highest trust value), then do a full pass across the media library (this was a 50-item sample out of ~244 pages' worth of images, not exhaustive).",
-      "requires": "WordPress edit access."
+      "requires": "WordPress edit access.",
+      "status": "PARTIALLY FIXED 2026-09-28: the 10 originally-identified images (review screenshots + award badges) now have descriptive alt text, verified live. The broader media-library pass beyond this 50-item sample is still open."
     },
     {
       "id": "missing-commercial-schema",
@@ -60,7 +61,8 @@
       "title": "Money pages lack Offer/TouristTrip schema despite defined per-package pricing",
       "evidence": "Checked JSON-LD in raw stored content via WP REST API. Homepage has WebPage + FAQPage + Product schema. /abu-dhabi-desert-safari-tours/ (the de-facto pillar/money page) has only WebPage + FAQPage -- no Offer/TouristTrip/Product schema, despite explicit per-package AED pricing on the page. Sitewide Organization/LocalBusiness schema (normally injected in the theme <head> by RankMath, not in post content) was NOT verified this pass -- the REST API only exposes post content, not the full rendered <head>.",
       "recommended_fix": "Add Offer/TouristTrip (or Product) schema consistently across all money pages, starting with /abu-dhabi-desert-safari-tours/, /abu-dhabi-desert-safari-prices/, and /abu-dhabi-desert-safari-tickets/. Separately, verify (via a live rendered-HTML check, not the REST API) that sitewide Organization/LocalBusiness schema exists in the theme head.",
-      "requires": "WordPress edit access for the fix; a live browser/HTML fetch (not REST) to verify the head-level schema question."
+      "requires": "WordPress edit access for the fix; a live browser/HTML fetch (not REST) to verify the head-level schema question.",
+      "status": "PARTIALLY FIXED 2026-09-28: TouristTrip/AggregateOffer schema appended to /abu-dhabi-desert-safari-tours/, verified live. /abu-dhabi-desert-safari-prices/ and /abu-dhabi-desert-safari-tickets/ still need the same treatment; sitewide Organization/LocalBusiness head-schema question still unverified."
     },
     {
       "id": "no-serp-visibility-head-term",
@@ -77,7 +79,8 @@
       "url": "https://www.arabiansafariroyal.com/overnight-desert-safari-abu-dhabi/",
       "evidence": "Twitter card meta (data1 under label 'Time to read') shows '2 minutes'. Verified actual stored WP content is 11,209 words -- one of the longest pages on the site, consistent with its ~45-50 minute siblings (private/vip/hummer/liwa/camp-only/half-day desert safari pages all show 26-46 minutes for similarly-sized content). This is a metadata calculation bug, not thin content -- the page itself is fine.",
       "recommended_fix": "Whatever plugin/field computes the displayed reading time for this page needs to be recalculated/resaved. Low impact (doesn't affect rankings directly) but shows wrong information on social share cards.",
-      "requires": "WordPress edit access (likely just re-saving the page to trigger recalculation)."
+      "requires": "WordPress edit access (likely just re-saving the page to trigger recalculation).",
+      "status": "FIXED 2026-09-28: page re-saved via WP REST API to trigger recalculation, verified 200 response."
     },
     {
       "id": "unverified-rating-claim",
@@ -97,7 +100,7 @@
       "evidence": "This page has a complete, well-formed title ('Self Drive Desert Safari Dubai — AED 35, Drive to Our Camp'), meta description, and OG/Twitter image -- indistinguishable from any other finished page by its head metadata. But both the live rendered page and the raw WP REST API content (confirmed identical, so this is not a rendering bug) show the actual body is a single ~50-word paragraph: 'Not sure this is your page? This page is the AED 35 self-drive safari...see the full Desert Safari Dubai page.' Reading time shows 'Less than a minute', versus 14-64 minutes on every other sampled page. robots meta is 'index, follow' -- this thin stub is fully indexable. Notably, the equivalent Abu Dhabi page (/self-drive-desert-safari-abu-dhabi/, sampled earlier) is a full, complete page -- this appears to be specific to the Dubai variant, not a template-wide issue.",
       "recommended_fix": "Either build this page out to match the depth of its Abu Dhabi counterpart, or -- if it's intentionally meant to be a short disambiguation/redirect note pointing to the main Dubai desert safari page -- set it to noindex and/or add a canonical to the page it points readers to, rather than leaving a ~50-word page fully indexable under a fully-formed commercial title. As written it risks looking like thin/doorway content to Google despite the rest of the site's strong content depth.",
       "requires": "WordPress edit access. A business decision on which fix (build out vs noindex+canonical) is appropriate.",
-      "status": "DECISION MADE BY SITE OWNER 2026-09-28: noindex + canonical to /dubai-desert-safari/ (not a full content buildout). Fix is queued in scripts/apply_wp_fixes.py, pending WP_USERNAME/WP_APP_PASSWORD GitHub secrets to run."
+      "status": "FIXED 2026-09-28: noindex + canonical to /dubai-desert-safari/ applied via RankMath updateMeta, verified 200 response. Live."
     },
     {
       "id": "duplicated-package-block-british-russian",
@@ -116,7 +119,8 @@
       "urls": ["https://www.arabiansafariroyal.com/terms-conditions/", "https://www.arabiansafariroyal.com/privacy-policy/"],
       "evidence": "Both pages have correct, on-topic titles ('Terms & Conditions | Royal Arabian Safari', 'Privacy Policy | Royal Arabian Safari'), but their meta descriptions are entirely unrelated to their content: /terms-conditions/ shows 'Quad biking in Abu Dhabi desert safari from AED 50. ATV rides on golden dunes with safety gear included...'; /privacy-policy/ shows 'Morning desert safari Abu Dhabi: 6-10 AM sunrise dunes, dune bashing, camel ride and sandboarding. From AED 35...'. These read like descriptions copy-pasted or auto-populated from unrelated commercial pages.",
       "recommended_fix": "Write accurate, topic-appropriate meta descriptions for both legal pages. Low SEO value either way (these pages rarely rank for commercial terms) but the current descriptions look unprofessional/broken in a Google snippet or when shared, and are worth a 2-minute fix.",
-      "requires": "WordPress edit access."
+      "requires": "WordPress edit access.",
+      "status": "FIXED 2026-09-28: both pages given accurate, topic-appropriate meta descriptions via RankMath updateMeta, verified 200 response. Live."
     },
     {
       "id": "live-403-stargazing-page",
@@ -135,7 +139,8 @@
       "url": "https://www.arabiansafariroyal.com/stargazing-desert-safari-abu-dhabi/",
       "evidence": "Meta description reads 'aSee the Milky Way from Abu Dhabi's darkest deserts...' -- a stray 'a' before 'See'. Cosmetic only.",
       "recommended_fix": "Delete the stray character. Two-second fix.",
-      "requires": "WordPress edit access."
+      "requires": "WordPress edit access.",
+      "status": "FIXED 2026-09-28: stray character removed via RankMath updateMeta, verified 200 response. Live."
     },
     {
       "id": "stale-staging-domain-references",
@@ -143,8 +148,9 @@
       "title": "Old pre-migration staging domain hardcoded into page content sitewide -- images, internal links, CSS, video, and schema markup",
       "evidence": "Discovered while verifying the homepage's Product schema (to build a matching TouristTrip schema for the tours page): the homepage's own JSON-LD pointed to 'blanchedalmond-parrot-567394.hostingersite.com' (a Hostinger auto-generated staging subdomain from before the site's move to arabiansafariroyal.com) instead of the live domain. Grepping the raw content confirmed this is not a one-off: 91 occurrences on the homepage alone, 88 on /abu-dhabi-desert-safari-tours/, 93 on /abu-dhabi-desert-safari-prices/ -- spanning image src attributes, video src/poster attributes, CSS background-image urls, some inline body-content links, and embedded schema.org JSON-LD. Checked a differently-built page (the Russian nationality page) and found zero occurrences, so this is specific to pages built with whatever component/workflow was used for these particular mega-pages, not universal. Structural navigation links (e.g. homepage -> /abu-dhabi-city-tour/) were checked separately and use correct relative paths, unaffected.",
       "impact": "Images/video still likely render (the staging subdomain is probably still live, since nothing looked visibly broken during the read-only crawl), but every one of these references is a dependency on a secondary, unofficial domain that could disappear without warning, splits any domain-level trust/caching signals, and the schema.org markup on the homepage currently describes itself as living on the wrong domain -- which can affect rich-result eligibility. Any inline body-content links using the stale domain are technically external links to Google, not internal ones, quietly leaking a small amount of internal link equity per instance.",
-      "recommended_fix": "Sitewide find-and-replace of 'blanchedalmond-parrot-567394.hostingersite.com' with 'www.arabiansafariroyal.com' across all page/post content. Pure hostname string substitution -- no HTML structure changes, low risk. Queued in scripts/apply_wp_fixes.py as a full-site scan-and-fix pass (not limited to the 3 pages confirmed by manual sampling), pending WP_USERNAME/WP_APP_PASSWORD GitHub secrets to run.",
-      "requires": "WordPress edit access (script ready, blocked on secrets -- same blocker as the rest of the fix pipeline)."
+      "recommended_fix": "Sitewide find-and-replace of 'blanchedalmond-parrot-567394.hostingersite.com' with 'www.arabiansafariroyal.com' across all page/post content. Pure hostname string substitution -- no HTML structure changes, low risk.",
+      "requires": "WordPress edit access.",
+      "status": "FIXED 2026-09-28: full-site scan (all 244 pages/posts) via WP REST API found the actual scope was far larger than the 3-page manual sample suggested -- 51 pages/posts affected, 3,797 total occurrences, concentrated in the airport-transfer/layover-tour page cluster plus the homepage, tours, and prices pages. All replaced with the live domain in a single automated pass, verified via the per-page success log. No HTML structure was touched, pure hostname substitution."
     }
   ]
 }
