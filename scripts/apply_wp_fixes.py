@@ -76,6 +76,25 @@ def rankmath_update_meta(item_id, object_id, meta):
         log(item_id, False, f"Request error: {exc}")
 
 
+def wp_core_meta_retry(item_id, post_type, object_id, meta_dict):
+    """Second-attempt fallback for items where rankmath_update_meta's 200
+    response did not actually persist (confirmed by live verification on
+    a prior run). RankMath's real postmeta key names (rank_math_title,
+    rank_math_description, rank_math_robots, rank_math_canonical_url) are
+    public/documented in its own source code -- not guessed. A diagnostic
+    on page 9971 showed these keys aren't in the REST-exposed `meta`
+    schema, so this is unlikely to work, but some plugins accept writes
+    to unregistered meta keys via a request filter even when the key
+    isn't in the advertised schema. Logged in full either way."""
+    url = f"{SITE}/wp-json/wp/v2/{post_type}/{object_id}"
+    try:
+        r = session.post(url, json={"meta": meta_dict}, timeout=30)
+        log(item_id, r.status_code == 200,
+            f"core meta retry POST {url} with {json.dumps(meta_dict)[:200]} -> {r.status_code}: {r.text[:300]}")
+    except Exception as exc:
+        log(item_id, False, f"Request error: {exc}")
+
+
 def wp_update_media_alt(item_id, media_id, alt_text):
     url = f"{SITE}/wp-json/wp/v2/media/{media_id}"
     try:
@@ -270,6 +289,16 @@ def main():
             "description": "Evening desert safari in Abu Dhabi with dune bashing, sunset, BBQ dinner and live shows. From AED 35 per person, no deposit, pay after, free cancellation.",
         },
     )
+    # Confirmed via live verification on a prior run that the above did
+    # NOT persist for this specific post -- retry via RankMath's real
+    # postmeta key names on the standard core endpoint.
+    wp_core_meta_retry(
+        "price-mismatch-evening-safari-retry", "posts", 1696,
+        {
+            "rank_math_title": "Evening Desert Safari Abu Dhabi, From AED 35 With Dinner",
+            "rank_math_description": "Evening desert safari in Abu Dhabi with dune bashing, sunset, BBQ dinner and live shows. From AED 35 per person, no deposit, pay after, free cancellation.",
+        },
+    )
 
     # /dubai-desert-safari-price/ (page id 9962): confirmed correct price
     # is AED 35 (~USD 9.50) (H1 was already right; title/meta said USD 14).
@@ -288,10 +317,18 @@ def main():
         1628,
         {"description": "The terms and conditions for booking a desert safari or tour with Royal Arabian Safari: booking, cancellation, payment and liability terms."},
     )
+    wp_core_meta_retry(
+        "mismatched-utility-page-meta-terms-retry", "pages", 1628,
+        {"rank_math_description": "The terms and conditions for booking a desert safari or tour with Royal Arabian Safari: booking, cancellation, payment and liability terms."},
+    )
     rankmath_update_meta(
         "mismatched-utility-page-meta-privacy",
         1627,
         {"description": "Royal Arabian Safari's privacy policy: what information we collect when you book a tour or contact us, and how it is used and protected."},
+    )
+    wp_core_meta_retry(
+        "mismatched-utility-page-meta-privacy-retry", "pages", 1627,
+        {"rank_math_description": "Royal Arabian Safari's privacy policy: what information we collect when you book a tour or contact us, and how it is used and protected."},
     )
 
     # --- P4: typo ---
@@ -299,6 +336,10 @@ def main():
         "typo-stargazing-meta",
         2599,
         {"description": "See the Milky Way from Abu Dhabi's darkest deserts on an overnight stargazing safari. Zero light pollution, Bedouin camp, BBQ dinner and telescope."},
+    )
+    wp_core_meta_retry(
+        "typo-stargazing-meta-retry", "pages", 2599,
+        {"rank_math_description": "See the Milky Way from Abu Dhabi's darkest deserts on an overnight stargazing safari. Zero light pollution, Bedouin camp, BBQ dinner and telescope."},
     )
 
     # --- P1: thin stub page -> noindex + canonical to the main Dubai page ---
@@ -308,6 +349,13 @@ def main():
         {
             "robots": ["noindex", "follow"],
             "canonicalUrl": f"{SITE}/dubai-desert-safari/",
+        },
+    )
+    wp_core_meta_retry(
+        "thin-stub-page-self-drive-dubai-retry", "pages", 9971,
+        {
+            "rank_math_robots": ["noindex", "follow"],
+            "rank_math_canonical_url": f"{SITE}/dubai-desert-safari/",
         },
     )
 
