@@ -1,0 +1,38 @@
+name: Apply Remaining Fixes via SSH / WP-CLI
+
+# Manual trigger only. Never runs automatically or on a schedule.
+# Requires SSH_HOST, SSH_PORT, SSH_USER and SSH_PASSWORD repository
+# secrets -- the job fails fast if the SSH connection doesn't work.
+on:
+  workflow_dispatch:
+
+jobs:
+  apply-fixes-ssh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install paramiko requests
+
+      - name: Apply fixes via SSH
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+        run: python scripts/fix_via_ssh.py
+
+      - name: Upload result log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ssh-fix-results
+          path: ssh_fix_results.json
+          if-no-files-found: ignore
