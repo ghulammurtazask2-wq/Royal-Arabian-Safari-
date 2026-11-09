@@ -12,7 +12,7 @@ import anthropic
 
 from prices import SERVICES, BOOKING_POLICIES, QUICK_PRICE_SUMMARY, WEBSITE
 
-_client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+_client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY", "proxy-managed"))
 
 SYSTEM_PROMPT = f"""You are the booking assistant for Royal Arabian Safari (arabiansafariroyal.com).
 You answer customer WhatsApp messages in a warm, concise, professional tone.
